@@ -1,0 +1,4 @@
+- Scale-space inference through SiZer map
+- Smooth estimation of the Total-Time-on-Test transform
+- Visual testing for model selection
+- Implementation of methods in by means of self-programmed code in R.

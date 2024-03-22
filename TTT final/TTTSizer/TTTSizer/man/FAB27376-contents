@@ -1,0 +1,21 @@
+Package: TTTSizer
+Type: Package
+Title: TTT-SiZer: A Graphic Tool For Aging Trends Recognition
+Version: 1.0
+Author: Rafael Adolfo Nozal Cañadas
+Maintainer: Rafael Adolfo Nozal Cañadas <rca015@uit.no>
+Description: A new graphic tool is presented to test aging trends based on lifetime data.
+    The graphical test is developed by means of scale and space inference about
+    the Total-Time-on-Test transform and its first and second derivatives. The
+    graphic tool TTT-SiZer is defined considering nonparametric local polynomial
+    kernel estimators and constructing the corresponding (simultaneous as
+    well as punctual) confidence intervals around three different curves. The
+    finite sample properties of the method are evaluated by a simulation study and
+    the comparison with other non-graphical tests shows that the graphical test
+    helps localize discrepancies of empirical data concerning a given hypothesized
+    aging property, thus allowing to solve the problem locally.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: ggplot2, reshape2, dplyr, lubridate, latex2exp, ggpubr
+RoxygenNote: 7.1.0

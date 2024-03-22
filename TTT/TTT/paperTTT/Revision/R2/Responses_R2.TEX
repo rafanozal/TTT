@@ -1,0 +1,126 @@
+\documentclass[12pt]{article}
+\usepackage[ansinew]{inputenc}
+\topmargin=-0.05truecm\relax
+ \textheight 23.75cm % 8.6in % 23.5cm
+ \textwidth 16.0cm % 5.8in % 15.0cm
+\renewcommand{\baselinestretch}{1.2}
+\oddsidemargin=0.05truecm\relax%
+\evensidemargin=0.05truecm\relax%
+ \voffset-1.25cm
+ \baselineskip15pt
+ \usepackage[dvips]{color}
+\begin{document}
+
+\begin{center}
+ {\Large\bf }
+\vskip 0.2cm
+
+\subsection* {TTT-SiZer: A graphic tool for aging trends recognition}
+\subsubsection*{Revision for {\em Reliability Engineering and System Safety}}
+\vskip 0.2cm
+
+{\bf April 2020}
+\end{center}
+\vskip 0.5cm
+
+\date{\ }
+
+\noindent Dear Editor, \vskip 0.3cm
+
+\noindent Please find attached the revision of our paper, ``TTT-SiZer: A graphic tool for aging trends recognition'' by M.L. G\'amiz, R. Nozal-Can\~adas and R. Raya-Miranda, following your suggestion and the comments from the reviewers.
+\bigskip
+
+We hope you will find suitable our revision. 
+\bigskip
+
+\vskip 0.3cm
+\noindent Yours sincerely,
+
+M.L. G\'amiz
+
+\vskip 0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   RESPUESTAS
+\newpage
+\date{\ }
+ 
+\begin{quote}
+\emph{ {\bf Editor }\\
+ Please revise the paper by addressing the issues a bit more. Thanks.}
+
+\end{quote}
+
+
+\noindent {\bf Response:} Thank you for reviewing our paper and the valuable feedback from the Reviewers.
+%Following your suggestions, we have tried to make the paper more relevant to this journal. To enhance the interest of practitioners in reliability engineering we have included more real examples in this field to emphasize the practical usefulness of the methods. We have worked hard on the introduction to make it clear that both, the topic discussed in this paper (aging) as well as the statistical tool considered (TTT transform) have been recurrent topics in reliability
+%analysis (theory and practice) during the last decades.
+%
+%Aging classes and the TTT curve are still nowadays catching the interest of researchers and practitioners in the area, as can be deduced from the extensive recent bibliography. To highlight this point we have added a considerable number of updated references that are conveniently quoted in the text.
+%
+%The main purpose of this paper is to bring modern techniques based on nonparametric statistics into the statistical toolbox of reliability analysis, which is not so frequent
+%among reliability engineers compared to parametric methods. To do it we introduce a
+%new and powerful tool to be used with data before looking for a stochastic (parametric)
+%model.
+%Following the suggestions of the Associate Editor and Reviewers, we have modified the structure of the manuscript and some mathematical developments have been sketched and moved to an Appendix section added at the end of the manuscript. We have reduced to the
+%minimum the mathematical description of the methods.
+%We hope this new writing style is considered appropriate for the journal.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{quote}
+\emph{{\bf Reviewer 1}\\
+The revision is done without much care. The author addressed the most of the suggestions. Still there is minor correction needed. For
+example, the newly added reference Zaretala et al. (2018) not discussed in the text. There are several typos still exist.  for example, put a comma after equation (1). Please correct all these mistakes.}
+\end{quote}
+
+{\bf Response.}
+Thank you for your report. All your suggestions have been addressed in the current version of the paper. First of all, we have carefully reviewed the writing and done our best to correct all typos. In particular, we have added punctuation after equations as you have pointed out.      \
+
+ With respect to the reference Zaretalab et al (2018), which was added in the previous version, we would like to note that a brief discussion had already been included in the previous version. Please see the last paragraph in Section 3.1:
+\begin{quote}
+In $[15]$ the authors also consider a least-squares optimization problem based on the TTT-plot. They assume a Weibull model and, from a dataset, they estimate the shape parameter by minimizing the distance between the TTT-plot and the TTT-transform of the Weibull model. In this paper, a more general and versatile approach is considered, that is, the optimization problem is formulated assuming no specific parametric form for the theoretical TTT-transform.
+\end{quote}
+Where $[15]$  stands for the reference  Zaretalab et al. (2018).
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{quote}
+	\emph{ {\bf Reviewer 3:} \\
+I am satisfied that the authors have addressed all my comments now, and I consider the paper ready for publication. 
+I am looking forward to using the R package they are preparing.}
+\end{quote}
+
+{\bf Response:} Thank you. We are working on the package and it will be available to users asap.
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{quote}
+	\emph{ {\bf Reviewer 4:} \\
+The paper has been improved based on earlier comments. But I feel that more should be done to address my concerns.\\
+One is the relevance to reliability engineering. The focus is still on analytical results without much discussion on the implication in
+reliability. \\
+The preliminaries is too long and it should focus more on recent works and related contributions. In fact, the paper could be shortened a bit (including the references as many old ones make the paper/topic looks old, especially those in 60-90s). \\
+I do not think all examples are needed. They are simple exercises without a sufficient amount of insights. Data set by Aarset is really
+old, and leukemia example is not engineering example to me.
+}
+\end{quote}
+
+{\bf Response:} 
+
+Thank you for your report. Following your suggestions we have modified the manuscript as explained next.
+As the most important, we would like to emphasize that the main axis of our article is the study of aging for identifying possible changes in aging trends of equipment or mechanisms,  which is a central issue in reliability engineering. To highlight this point, we have extended in the paper the corresponding discussion, as you suggest, and to do so we have added, new and recent, related works where it is considered the importance of detecting the type of aging for establishing politics of maintenance, in concrete, preventive maintenance (see references 3-4 in the final list of the manuscript). \ 
+
+We have shortened the preliminaries. We have removed the oldest references and have left only the most recent ones, where a detailed description of the notions of aging and the TTT curve can be found. So the list of references in the paper has been reduced significantly. We hope that the writing is clearer and more direct in this new version. \
+
+We have moved the leukemia example to a new sub-section added at the end of the Appendix. Although our motivation is in reliability analysis, we are aware that many readers not directly interested in reliability applications find it very useful the information and methods published in this journal. In any case, if the reviewer or the editor finds this example inappropriate we have no objection to remove it for the final version of the paper.
+
+With respect to the Aarset example, it is a recurrent example that has been used to illustrate many different methods since its introduction. A quick search in Google scholar shows almost 700 citations of the Aarset's paper, 27 in 2020. So, we would like to keep this example. Moreover, the discussion of this example has been extended by comparing related results in a recent study that has been quoted in the current version of the paper. 
+
+
+
+We hope that this version of the paper fits well with the profile and standards of Reliability Engineering and System Safety. 
+
+
+\end{document}

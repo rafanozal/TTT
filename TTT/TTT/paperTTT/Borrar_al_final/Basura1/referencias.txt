@@ -1,0 +1,5 @@
+Bergman, B. & Klefsjö, B. (1984) The Total Time on Test Concept and Its Use in Reliability Theory. Operations Research, 32(3), Reliability and Maintainability, 596--606.
+Arnold, B.C., Balakrishnan, N. & Nagaraja, H.N. (2008) A First Course in Order Statistics. Classics in Applied Mathematics New York: Willey.
+Chaudhuri, P. & Marron, J.S. (1999) SiZer for Exploration of Structures in Curves. Journal of the American Statistical Association, 94(447), 807--823.
+Chaudhuri, P. & Marron, J.S. (2002) Curvatuve vs. Slope Inference for Features in Nonparametric Curve Estimates. 
+Unnikirishnan Nair, N., Sankaran, P.G. & Balakrishnan, N. () Quantile-Based Realiability Analysis. 

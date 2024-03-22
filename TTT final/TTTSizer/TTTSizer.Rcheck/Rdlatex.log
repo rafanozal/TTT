@@ -1,0 +1,139 @@
+Hmm ... looks like a package
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400)
+entering extended mode
+(Rd2.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/bk10.clo))
+(/usr/share/R/share/texmf/tex/latex/Rd.sty
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/ifthen.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/tools/longtable.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/tools/bm.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/alltt.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/tools/verbatim.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/url/url.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/textcomp.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/fontenc.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/psnfss/times.sty))
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/inputenc.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdfmode.
+def)
+No file Rd2.aux.
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/psnfss/t1pcr.fd)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/psnfss/t1phv.fd
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 20.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 23.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 26.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 46.
+
+)
+No file Rd2.toc.
+[1{/home/gromenawer/.miktex/texmfs/data/pdftex/config/pdftex.map}] [2] [3]
+[4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+Overfull \hbox (31.3804pt too wide) in paragraph at lines 864--864
+ []\T1/pcr/m/n/9 This should take about 40 seconds if you run it with a CPU mad
+e from a toaster:[] 
+
+Overfull \hbox (371.58002pt too wide) in paragraph at lines 870--870
+ []\T1/pcr/m/n/9 ttt(myData, xgrid, ygrid, kernel = "gaussian", myMethod = "qua
+dratic", variance = "bootstrap",  ESSLimit = 5, saveCSV = TRUE, saveLog = FALSE
+)[] 
+[15] (Rd2.aux) )
+(see the transcript file for additional information){/home/gromenawer/.miktex/t
+exmfs/install/fonts/enc/dvips/base/8r.enc}</home/gromenawer/.miktex/texmfs/inst
+all/fonts/type1/urw/courier/ucrr8a.pfb></home/gromenawer/.miktex/texmfs/install
+/fonts/type1/urw/helvetic/uhvr8a.pfb></home/gromenawer/.miktex/texmfs/install/f
+onts/type1/urw/times/utmb8a.pfb></home/gromenawer/.miktex/texmfs/install/fonts/
+type1/urw/times/utmr8a.pfb></home/gromenawer/.miktex/texmfs/install/fonts/type1
+/urw/times/utmr8a.pfb></home/gromenawer/.miktex/texmfs/install/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on Rd2.pdf (15 pages, 101154 bytes).
+Transcript written on Rd2.log.
+pdflatex: major issue: So far, you have not checked for MiKTeX updates.
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400)
+entering extended mode
+(Rd2.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-03-06>
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/bk10.clo))
+(/usr/share/R/share/texmf/tex/latex/Rd.sty
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/ifthen.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/tools/longtable.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/tools/bm.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/alltt.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/tools/verbatim.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/url/url.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/textcomp.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/fontenc.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/psnfss/times.sty))
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/base/inputenc.sty)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdfmode.
+def) (Rd2.aux)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/psnfss/t1pcr.fd)
+(/home/gromenawer/.miktex/texmfs/install/tex/latex/psnfss/t1phv.fd
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 20.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 23.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 26.
+
+
+LaTeX Warning: Font shape declaration has incorrect series value `mc'.
+               It should not contain an `m'! Please correct it.
+               Found on input line 46.
+
+) (Rd2.toc [1{/home/gromenawer/.miktex/texmfs/data/pdftex/config/pdftex.map}])
+[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+Overfull \hbox (31.3804pt too wide) in paragraph at lines 864--864
+ []\T1/pcr/m/n/9 This should take about 40 seconds if you run it with a CPU mad
+e from a toaster:[] 
+
+Overfull \hbox (371.58002pt too wide) in paragraph at lines 870--870
+ []\T1/pcr/m/n/9 ttt(myData, xgrid, ygrid, kernel = "gaussian", myMethod = "qua
+dratic", variance = "bootstrap",  ESSLimit = 5, saveCSV = TRUE, saveLog = FALSE
+)[] 
+[16] (Rd2.aux) )
+(see the transcript file for additional information){/home/gromenawer/.miktex/t
+exmfs/install/fonts/enc/dvips/base/8r.enc}</home/gromenawer/.miktex/texmfs/inst
+all/fonts/type1/urw/courier/ucrr8a.pfb></home/gromenawer/.miktex/texmfs/install
+/fonts/type1/urw/helvetic/uhvr8a.pfb></home/gromenawer/.miktex/texmfs/install/f
+onts/type1/urw/times/utmb8a.pfb></home/gromenawer/.miktex/texmfs/install/fonts/
+type1/urw/times/utmr8a.pfb></home/gromenawer/.miktex/texmfs/install/fonts/type1
+/urw/times/utmr8a.pfb></home/gromenawer/.miktex/texmfs/install/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on Rd2.pdf (16 pages, 103120 bytes).
+Transcript written on Rd2.log.
+pdflatex: major issue: So far, you have not checked for MiKTeX updates.
+Saving output to ‘TTTSizer-manual.pdf’ ...
+Done
+You may want to clean up by 'rm -Rf /tmp/RtmpPAczl5/Rd2pdf32258db7753'

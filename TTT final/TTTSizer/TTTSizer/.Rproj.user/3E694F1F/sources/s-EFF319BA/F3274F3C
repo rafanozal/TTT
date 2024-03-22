@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1591511866115.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "186|39|1047|0|\n",
+    "hash" : "1144563953",
+    "id" : "F3274F3C",
+    "lastKnownWriteTime" : 1591514798,
+    "last_content_update" : 1591514798039,
+    "path" : "~/Desktop/TTTSizer/TTTSizer/R/ttt.R",
+    "project_path" : "R/ttt.R",
+    "properties" : {
+        "cursorPosition" : "7,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

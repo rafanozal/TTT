@@ -1,0 +1,3 @@
+i yellow olivedrab orange cyan
+1 0 0 0 0
+2 0 0 0 0

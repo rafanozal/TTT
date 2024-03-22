@@ -1,0 +1,429 @@
+%% 
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+
+\documentclass[preprint,12pt]{elsarticle}
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+%\usepackage[notref]{showkeys}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}
+%% The amsthm package provides extended theorem environments
+% %\usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newdefinition{rmk}{Remark}
+\newproof{pf}{Proof}
+\newproof{pot}{Proof of Theorem \ref{thm2}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+%\newtheorem{thm}{{\sc Theorem}}[section]
+\newtheorem{dfn}{{\sc Definition}}[section]
+\newtheorem{prp}{{\sc Proposition}}[section]
+\newtheorem{lm}{{\sc Lemma}}[section]
+\newtheorem{cor}{{\sc Corollary}}[section]
+\newtheorem{ex}{{\sc Example}}[section]
+
+%\journal{Reliability Engineering \& System Safety}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}%
+% \title* lets you specify the title of your manuscript.
+% Use \protect\newline to force a line break in your title.
+%\title{Nonparametric estimation of the intensity function of a trend renewal process \tnoteref{title1}}
+
+%\title{Importance Birbaum measures in reliability from a logistic regression approach\tnoteref{title1}}
+\title{Evaluation of the aging properties by a scale-space inspection of the TTT curve\tnoteref{title1}}
+% \toctitle specifies the title as will be printed in the table of 
+% contents.
+% Use \protect\newline to force a line break in your title.
+%\toctitle{Study of the ageing properties of a lifetime by means of the Sizer map of the TTT curve}
+%
+% \titlerunning defines the title in the running head. Abbreviate
+% your title, if the full title is too long to fit in the running 
+% head.
+%\titlerunning{Sizer Map of the TTT curve}
+%  
+% \authors specifies the authors. Please use initials. Authors are 
+% seperated by the \and command. Use the \inst{1} and \inst{2} commands 
+% to define the reference mark to your affiliation if needed.
+%\author[inst1]{Maria Luz G\'amiz\corref{cor1}}
+%\ead{mgamiz@ugr.es}
+
+
+
+%\cortext[cor1]{Corresponding author}
+
+
+%\address[inst1]{Department of Statistics and O.R., University of Granada, 18071 Granada, Spain}
+
+
+%\maketitle             
+\begin{abstract}
+
+\end{abstract}
+
+\begin{keyword}
+
+\end{keyword}
+\end{frontmatter}
+\bigskip
+
+\section{Introduction}
+Parts of the paper:
+\begin{itemize}
+\item Definition and properties of the Total-Time-on-Test (TTT) transform
+\item Kernel estimation of the TTT curve and its derivatives
+\item Sizer map for studying convexity properties of a curve.
+\end{itemize}
+
+\section{Total-Time-on-Test transform: Definition and relevant properties}
+
+Total time on test plots provide a useful graphical method for tentative identification of lifetime models. This concept is very important in applications in reliability analysis. When several units are tested for studying their life lengths some of the units would fail while others may survive the test period. The sum of all observed and incomplete life lengths is the the total time on test statistics. The plot of this statistic versus time is called the total-time-on-test plot. As the number of units on test tends to infinity the limit of this statistic is called the total time on test transform (TTT). This concept was introduced by Barlow and Doksum () and later studied by Barlow {\it et al.} ()
+Model identification is based on properties of the TTT transform. 
+
+\begin{dfn}\label{def.ttt} \textbf{Total-Time-on-Test statistic}.
+
+\noindent Suppose $n$ items under test and successive failures are observed at $0=X_{(0)} \leq X_{(1)} \leq X_{(2)}\leq \cdots \leq X_{(n)}$, with $X_{(i)}$ the $i$-th order statistic from a lifetime random variable $X$ with absolutely continuous distribution function $F$. Then the \textit{total time on test statistic} during the interval $(0,t)$ is defined as 
+\[
+\tau (t) = \sum_{i=1}^r X_{(i)}+\left(n-r\right)t,
+\]
+provided that $X_{(r-1)}<t\leq X_{(r)}$.
+
+\end{dfn}
+
+For comparison purposes, usually the statistic is scaled to the interval $[0,1]$ by means of the transformation $\tau\left(X_{(r)}\right)/\tau\left(X_{(n)}\right)$, for $r=1,2,\ldots,n$.
+
+Based on the sample order statistics we can construct the empirical distribution function, that is $F_n(t)=r/n$, for $X_{(r)} \leq t < X_{(r+1)}$, for $r=1,2,\ldots,n-1$; with $F_n(t)=0$, for $t <X_{(1)}$; and, with $F_n(t)=1$, for $t \geq X_{(n)}$. We can define the following function
+\[
+F^{-1}_n(p)= \inf \left\{x \geq 0:F_n(x) >p\right\},
+\]
+it can be checked, Nair {\it et al.} (2010), that
+\[
+\int_0^{F^{-1}_n\left(\frac{r}{n}\right)} \left(1-F_n(t)\right)dt= \frac{\tau\left(X_{(r)}\right)}{n},
+\]
+and also that
+\[
+\underset{n\rightarrow \infty}{\lim}\underset{\frac{r}{n}\rightarrow p}{\lim}\int_0^{F^{-1}_n\left(\frac{r}{n}\right)}\left(1-F_n(t)\right) dt= \int_0^{F^{-1}(p)}\left(1-F(t)\right) dt,
+\]
+uniformly in $p\in (0,1)$. 
+
+\begin{dfn}\label{ttt.t} \textbf{Total Time on Test transform}
+
+\noindent Let $X$ be a random variable with cumulative distribution function (survival) $F$ ($S$), the \textit{total time on test transform} of $X$ is defined as
+\[
+\varphi(p) =\int_0^{Q(p)}S(t) dt
+\]
+where we denote $Q(p)= F^{-1}(p)$, for $p\in [0,1]$, the corresponding quantile function.
+\end{dfn}
+The mean of the distribution $F$ can be obtained as $\mu=\int_0^Q(1) S(t)dt$, the we define the scaled TTT transform as $\varphi(p)/\mu$, for $0 \leq p \leq 1$,  which is scale invariant. We keep notation $\varphi(p)$ for the scaled TTT transform, and we assume that $\mu=1$, since it does not implies any loss of generality.
+
+
+\subsection{Aging properties based on the TTT transform}
+
+The scaled TTT transform can be used to characterize different aging properties, see Barlow and Proschan, (1975) and Bergman and Lindqvist (1983). For $F$ the exponential distribution, it can be checked that $\varphi(p)=p$, for $0 \leq p \leq 1$. As mentioned above, based on a sample $X_1,X_2,\ldots, X_n$ one can construct the TTT plot, which will be closer to the scaled TTT curve as $n$ tends to $+\infty$. We can thus use the TTT plot as a tool for model selection, in the sense that when, for example, the TTT plot produces a cloud of points around the diagonal of the square unit, we can admit that the distribution of the underlying lifetime $F$ is exponential, that is with constant hazard rate. Other hazard shapes can be recognized from an inspection of the TTT plot. A convex TTT curve corresponds with a decreasing hazard (DFR); a concave TTT curve corresponds with an increasing hazard (IFR). When the TTT plot describes a trajectory first convex then concave it indicates a bathtub hazard shape and when it is concave then convex, it indicates a unimodal hazard shape. 
+
+In summary, to determine the type of aging represented by $X$ we need to study the shape of the TTT curve, then we compute the first and second derivatives of the TTT transform, that are
+
+\[
+\varphi'(p)= \frac{\partial}{\partial p}\int_0^{Q(p)}S(x)dx=S\left(Q(p)\right)Q'(p)=(1-p)Q'(p); 
+\]
+and,
+\[
+\varphi''(p)= -Q'(p)+(1-p)Q''(p). 
+\]
+
+\begin{ex}\label{expon}{Exponential distribution}
+Let $X$ be a random variable with distribution $Exp(\lambda)$.....
+\end{ex}
+
+\section{Kernel estimation of the TTT curve and its first and second derivatives based on quantile estimation}
+We consider to estimate the TTT curve and its derivatives through nonparametric kernel estimation techniques. To obtain the estimator of these curves we need to conveniently estimate the quantile function. We distinguish two cases: $iid$ data and $censored$ data.
+
+\subsection{Kernel estimation of quantiles with $iid$ samples}
+Let $X_1,X_2,\cdots,X_n$ be an independent and identically distributed random sample drawn form an absolutely continuous distribution function $F$ with density $f$. Let $X_{(1)},X_{(2)},\cdots,X_{(n)}$ denote the corresponding order statistics. The quantile function $Q$ of the population is defined as $Q(p)=\inf \left\{x: F(x) \geq p\right\}$, $0<p<p$. The classical nonparametric estimator of $F$ is the empirical cumulative distribution function (ecdf) $F_n(t)=n^{-1}\sum_{i=1}^n I\left\{X_{(i)}\leq t\right\}$. The simplest method to estimate the quantile function is the empirical quantile estimator, that is $Q_n(p)=\inf \left\{x: F_n(x) \geq p\right\}$, then in particular we have that $Q_n\left(\frac{i}{n}\right)=X_{(i)}$, for $i=1,2,\ldots, n$. Parzen () developed kernel smoothing on the empirical quantile leading to the kernel quantile estimator
+\begin{equation}\label{kernel.Q1}
+\widehat{Q}_h(p)=\int_0^1 Q_n(u)K_h(u-p)du
+\end{equation}
+where we define $K_h(\cdot)=K(\cdot/h)/h$, for $K$ a kernel function, and $h$ a smoothing parameter. We can approximate the kernel quantile in $(\ref{kernel.Q1})$ by
+\begin{equation}\label{kernel.Q2}
+\widehat{Q}_h(p)=\sum_{i=1}^n X_{(i)}\left\{\textbf{K}\left(\frac{\frac{i}{n}-p}{h}\right)-\textbf{K}\left(\frac{\frac{i-1}{n}-p}{h}\right)\right\}
+\end{equation}
+with ${\bf K} (u) =\int_{-\infty}^u K(s)ds$. From the expression in $(\ref{kernel.Q2})$ we can obtain the corresponding kernel estimators of the first and second derivatives of the quantile function as
+\begin{equation}\label{kernel.dQ}
+\widehat{Q}'_h(p)=\sum_{i=1}^n X_{(i)}\left\{K_h\left(\frac{i-1}{n}-p\right)-K_h\left(\frac{i}{n}-p\right)\right\}=\sum_{i=1}^n A_iX_{(i)};
+\end{equation}
+and,
+\begin{equation}\label{kernel.d2Q}
+\widehat{Q}''_h(p)=h^{-2}\sum_{i=1}^n X_{(i)}\left\{K'\left(\frac{\frac{i}{n}-p}{h}\right)-K'\left(\frac{\frac{i-1}{n}-p}{h}\right)\right\}=\sum_{i=1}^n B_iX_{(i)}.
+\end{equation}
+Now we plug-in these estimates in the expression of the second derivative of the TTT transform to define
+\begin{equation}\label{phi.2.1}
+\widehat{\varphi}''_h(p)=-\widehat{Q}'_h(p)+(1-p)\widehat{Q}''_h(p)
+\end{equation}
+So we can write the estimator in equation $(\ref{phi.2.1})$ as a linear combination of order statistics in the form
+\begin{equation}\label{phi.2.2}
+\widehat{\varphi}''_h(p)=\sum_{i=1}^n C_iX_{(i)}
+\end{equation}
+where $C_i=-A_i+(1-p)B_i$.
+The variance of the estimator can be obtained as
+\begin{equation}\label{var.phi}
+{\rm Var}\left(\varphi''_h(p)\right)=\sum_{i=1}^nC_i^2 {\rm Var}\left(X_{(i)}\right)+2\underset{i<j}{\sum}C_iC_j{\rm Cov}\left(X_{(i)},X_{(j)}\right)
+\end{equation}
+
+
+
+\subsection{Kernel estimation of quantiles with $censored$ data}
+***This section has to be developed****
+
+\newpage
+%
+\section{Local polynomial estimation of the TTT curve and its first and second derivatives}
+\subsection{Least-squares estimation of the Total-Time-on-Test transform with $iid$ samples} 
+In this section we suggest a local-polynomial estimator for the TTT-transform directly formulated from an empirical estimation of the TTT-curve, that is, we do not need to estimate the quantiles to get an estimator of the TTT-transform.
+%
+\noindent Let $X_1,X_2,\cdots,X_n$ be an independent and identically distributed random sample drawn form an absolutely continuous distribution function $F$ with density $f$. Let $X_{(1)},X_{(2)},\cdots,X_{(n)}$ denote the corresponding order statistics. Let us denote $p_i=\frac{i}{n}$ for $i= 1,2, \ldots, n$. An empirical ($naive$) estimator of the TTT-curve $\widehat{\varphi}_n$, can be defined as follows
+%
+\begin{equation}\label{empi}
+\widehat{\varphi}_n\left(p_i\right)= \sum_{j=1}^i \left(1-\frac{j-1}{n}\right) \left(X_{(j)}-X_{(j-1)}\right),
+\end{equation}
+for $i=1,2,\ldots,n$, with $\widehat{\varphi}_n(0)=0$. We can observe that $\widehat{\varphi}_n(1)=\bar{X}$, the mean sample statistics. Since the properties of the curve are not affected by scale changes, we can confine the curve to be defined in the interval $[0,1]$ by first normalizing the data. That, is we work with the sample $\{X_i/\bar{X}; i=1,\ldots,n\}$. In the following, without loss of generality assume that $\bar{X}=1$.
+
+Under a local-polynomial approach we consider that, for each estimation point $p_0$, the TTT-transform $\varphi(p_0)$ is locally (in a neighborhood of $p_0$) approximated by a $m$th-degree polynomial function in the sense that for all $p \in \left(p_0-h,p_0+h\right)$ we have that $\varphi(p)=\theta_0+\theta_1(p-p_0)+\theta_2(p-p_0)^2+\ldots+\theta_m(p-p_0)^m$, for an appropriate bandwidth $h$. 
+
+The parameters of the model can be interpreted respectively as $\theta_0={\varphi}(p_0)$; ${\theta}_1={\varphi'}(p_0)$; and, in general, ${\theta}_k=\frac{\varphi^{(k)}(p_0)}{k!}$, for $k=1,2,\ldots,m$. The approximation above is valid locally if we assume certain smoothness conditions on the quantile function, in the sense of derivability. 
+
+
+In particular, the three first coefficients provide the following estimates: $\widehat{\varphi}(p_0)=\widehat{\theta}$, $\widehat{\varphi'}(p_0)=\widehat{\theta}_1$, and $\widehat{\varphi''}(p_0)=2\widehat{\theta}_2$, respectively.
+To this goal, we formulate the following least squares problem
+
+\begin{eqnarray}\label{LS}
+&&\left(\widehat{\theta}_0,\widehat{\theta}_1,\ldots,\widehat{\theta}_m\right)^t= \\
+\nonumber &&\underset{\left({\theta}_0,\theta_1,\ldots, {\theta}_m\right)^t}{\arg \min} \sum_{i=1}^n\left\{\widehat{\varphi}_n(p_i)-\theta_0-\theta_1(p_i-p_0)-\ldots-\theta_m(p_i-p_0)^m\right\}^2 K_h(p_i-p_0),
+\end{eqnarray}
+where $K_h(\cdot)=\frac{1}{h}K(\frac{\cdot}{h})$, with $K$ a symmetric kernel function, and $h$ the bandwidth parameter that controls the size of the window around the estimation point $p_0$ where the polynomial approximation is valid.
+
+\subsection{Local-quadratic estimator}
+In particular we can fit the data locally by using a 2-degree polynomial. We call this estimator $\widehat{\varphi}_h(\cdot)$. Then, we set the least squares problem of ($\ref{LS}$) for $m=2$ and define 
+\[
+A_r(p_0)=\sum_{i=1}^n\widehat{\varphi}_n(p_i)(p_i-p_0)^r K_h(p_i-p_0), \ \ r=0, \ 1, \ 2;
+\]
+and 
+\[
+a_l(p_0)=\sum_{i=1}^n(p_i-p_0)^l K_h(p_i-p_0), \ \ l=0,\ 1, \ 2, \ 3, \ 4.
+\]
+After differentiating in equation ($\ref{LS}$), for $m=2$ with respect to $\theta_j$ ($j=0, 1, 2$), we obtain a system of linear equations that can be written in matrix form
+\[
+\left(\begin{array}{c} 
+A_0 \\ 
+A_1 \\ 
+A_2
+ \end{array}\right)
+=\left(\begin{array}{ccc}
+a_0 & a_1 &a_2 \\ 
+a_1 & a_2 &a_3 \\ 
+a_2 & a_3 &a_4 
+\end{array}\right)
+\left(\begin{array}{c}
+ \theta_0 \\ 
+\theta_1 \\ 
+\theta_2
+ \end{array}\right).
+\]
+Using  Cramer's rule, the solution can be then expressed as
+\[
+\widehat{\theta}_0=\frac{\left|
+\begin{array}{ccc} 
+A_0 & a_1 &a_2 \\ 
+A_1 & a_2 &a_3 \\ 
+A_2 & a_3 &a_4
+ \end{array}\right|}
+ {\left|\begin{array}{ccc} 
+a_0 & a_1 &a_2 \\
+ a_1 & a_2 &a_3 \\
+ a_2 & a_3 &a_4
+ \end{array}\right|}=\widehat{\varphi}_h(p_0),
+\hspace{0.5cm}
+\widehat{\theta}_1=\frac{\left|
+\begin{array}{ccc} 
+a_0 & A_0 &a_2 \\
+ a_1 & A_1 & a_3 \\ 
+a_2 & A_2 &a_4
+ \end{array}\right|}
+{\left|\begin{array}{ccc} 
+a_0 & a_1 &a_2 \\ 
+a_1 & a_2 &a_3 \\ 
+a_2 & a_3 &a_4
+ \end{array}\right|}=\widehat{\varphi'}_h(p_0),
+\]
+\[
+\widehat{\theta}_2=\frac{\left|
+\begin{array}{ccc} 
+a_0 & a_1 & A_0 \\
+ a_1 & a_2 &A_1 \\ 
+a_2 & a_3 &A_2
+ \end{array}\right|}
+{\left|\begin{array}{ccc}
+a_0 & a_1 &a_2 \\
+ a_1 & a_2 &a_3 \\ 
+a_2 & a_3 &a_4
+ \end{array}\right|}=2 \ \widehat{\varphi''}_h(p_0),
+\]
+where we denote $|{\bf A}|$, the determinant of matrix ${\bf A}$. In order to construct the corresponding SiZer map we are interested in the particular expression of $\widehat{\theta}_2$ (remind that $\widehat{\varphi''}(p_0)=2 \ \widehat{\theta}_2$), then we have
+\begin{equation}\label{theta2}
+\widehat{\varphi''}_h(p_0)= 2 \widehat{\theta}_2(p_0) =2 \sum_{i=1}^n \bar{{K}}_h\left(p_i-p_0\right) \widehat{\varphi}_n(p_i)
+\end{equation}
+where we denote
+\[
+\bar{{K}}_h\left(p_i-p_0\right)=\frac{\left(a_0a_2-a_1^2\right)\left(p_i-p_0\right)^2+\left(a_1a_2-a_0a_3\right)\left(p_i-p_0\right)+\left(a_1a_3-a_2^2\right)}{a_0a_2a_4+2a_1a_2a_3-a_2^3-a_0a_3^2-a_1^2a_4} K_h\left(p_i-p_0\right).
+\]
+To derive statistical properties of the estimator defined in equation ($\ref{theta2}$), we write it as a linear combination of the order statistics $X_{(1)} \leq X_{(2)} \leq \cdots \leq X_{(n)}$. To do so, we start from the empirical (naive) estimator $\widehat{\varphi}_n$ detailed in ($\ref{empi}$), which can be expressed as
+\[
+\widehat{\varphi}_n(p_i)=\sum_{j=1}^i\omega_{i,j} X_{(j)},
+\] 
+where the weights $\omega_{i,j}$, are given by 
+\[
+\omega_{i,j}=\left\{\begin{array}{cll}
+\frac{1}{n}, & \hspace{0.3cm}& j= 1,2, \ldots, i-1; \\
+\frac{n-(i-1)}{n},& \hspace{0.3cm}& j= i. \\
+\end{array}\right.
+\]
+We can arrange these weights in matrix of the form
+\[
+{\bf W} =\left(
+\begin{array}{cccccc}
+1 & 0 &0 &0& \cdots &0 \\
+\frac{1}{n} & \frac{n-1}{n}&0&0&\cdots& 0 \\
+\frac{1}{n} & \frac{1}{n}&\frac{n-2}{n}&0&\cdots& 0 \\
+\frac{1}{n} & \frac{1}{n}&\frac{1}{n}&\frac{n-3}{n}&\cdots& 0 \\
+\vdots&\vdots&\vdots&\vdots&\vdots&\vdots \\
+\frac{1}{n} & \frac{1}{n}&\frac{1}{n}&\cdots&\frac{1}{n}& \frac{1}{n} \\
+\end{array}
+\right)
+\]
+
+Then
+\begin{eqnarray*}
+\widehat{\varphi''}_h(p_0)&=&2\sum_{i=1}^n \bar{K}_h(p_i-p_0)\sum_{j=1}^i\omega_{i,j}X_{(j)} \\
+&=& 2\sum_{i=1}^n \sum_{j=1}^i \bar{K}_h(p_i-p_0)\omega_{i,j}X_{(j)} 
+\end{eqnarray*}
+the sums can be exchanged so we get
+\begin{equation*}
+\widehat{\varphi''}_h(p_0)=2  \sum_{j=1}^n \sum_{i=j}^n \bar{K}_h(p_i-p_0)\omega_{i,j}X_{(j)}, 
+\end{equation*}
+and denoting $\bar{\bar{{\bf K}}}_{h,j}(p_0)=\sum_{i=j}^n \bar{K}_h(p_i-p_0)\omega_{i,j}$ the variance can be easily obtained
+
+\begin{equation}\label{V.phi2}
+{\rm Var} \left(\widehat{\varphi''}_h(p_0)\right)=4 \sum_{j=1}^n\left(\bar{\bar{{\bf K}}}_{h,j}(p_0)\right)^2 {\rm Var}\left(X_{(j)}\right)+
+8\sum_{i,j=1,{j \neq i}}^n \bar{\bar{{\bf K}}}_{h,i}(p_0)\bar{\bar{{\bf K}}}_{h,j}(p_0) {\rm Cov}\left(X_{(i)},X_{(j)}\right)
+\end{equation}
+
+\newpage
+%%%%%%%%%%%%%%%%%
+\subsection{\textbf{Moments of order statistics}}
+
+\noindent Let $X_1,X_2,\ldots, X_n$ be a sample of independent random variables with a common absolutely continuous distribution $F$, and let  $X_{(1)} \leq X_{(2)}\leq \cdots X_{(n)}$ be the order statistics. 
+We define the $m$th non-centered moment of the $i$th order statistics as (see Arnold, Balakrishnan and Nagaraja, 2008)
+\begin{equation}\label{mu.i}
+\mu_{(i)}^{(m)}=E\left(X_{(i)}^m\right)=\frac{n!}{(i-1)!(n-i)!}\int_0^1\left\{F^{-1}(u)\right\}^m u^{i-1}(1-u)^{n-i}du,
+\end{equation}
+for $1\leq i \leq n$, and $m=1,2, \ldots$. For $1 \leq i < j \leq n$, and $m_1, m_2=1,2,\ldots$, the product moments can be defined as
+\begin{eqnarray}\label{mu.ij}
+\mu_{(i<j)}^{(m_1,m_2)}&=&E\left(X_{(i)}^{m_1}X_{(j)}^{m_2}\right)= \\
+\nonumber &=&\frac{n!}{(i-1)!(j-i-1)!(n-j)!} \times \\
+\nonumber \quad \quad \quad &&\int_0^1\int_{u_i}^1\left\{F^{-1}(u_i)\right\}^{m_1} u_i^{i-1}(u_j-u_i)^{j-i-1}(1-u_j)^{n-j}du_jdu_i,
+\end{eqnarray}
+
+On the one hand, we are interested in the variance of the order statistics, so we need in particular ($\ref{mu.i}$) for all $i=1,\ldots,n$, and $m=1,2$. On the other hand we need estimate the covariance of pairs of order statistics, so we need ($\ref{mu.ij}$) for the particular choices of $m_1=m_2=1$. We can estimate the above moments by using the empirical quantile function $Q_n(p)$ then we define estimator of the moments of the order statistics ar
+
+\begin{eqnarray}\label{hat.mu.i}
+\widehat{\mu}_{(i)}^{(m)}&=&\frac{n!}{(i-1)!(n-i)!}\sum_{r=1}^n \frac{\left(X_{(r)}\right)^m}{n} \left(\frac{r}{n}\right)^{i-1}\left(1-\frac{r}{n}\right)^{n-i}= \\
+\nonumber &=&\left(\begin{array}{c} n-1 \\ i-1 \\ \end{array}\right)\sum_{r=1}^n X_{(r)}^m \left(\frac{r}{n}\right)^{i-1}\left(1-\frac{r}{n}\right)^{n-i},
+\end{eqnarray}
+for $m=1,2$; and, the product moment for $m_1=m_2=1$ is estimated by
+\begin{eqnarray}\label{hat.mu.ij} 
+\widehat{\mu}_{(i<j)}&=&\frac{n!}{(i-1)!(j-i-1)!(n-j)!} \times \\ 
+\nonumber && \quad \quad \quad \sum_{r=1}^n\sum_{s=r+1}^n\frac{X_{(r)}X_{(s)}}{n^2}\left(\frac{r}{n}\right)^{i-1}
+                                       \left(\frac{s}{n}-\frac{r}{n}\right)^{j-i-1}\left(1-\frac{s}{n}\right)^{n-j},
+\end{eqnarray}
+for $1 \leq i<j \leq n$.
+%%%%%%%%%%%%%%%
+\newpage
+
+\section{Development of SiZer map for evaluating second order shape properties}
+
+\subsection*{Point confidence interval for $\varphi''(p)$}
+For $0\leq p \leq 1$,
+\[
+\left[\widehat{\varphi}''_h(p)-q_{1-\frac{\alpha}{2}}\sqrt{\tt{Var}\left(\widehat{\varphi}''_h(p)\right)}, \ \widehat{\varphi}''_h(p)+q_{1-\frac{\alpha}{2}}\sqrt{\tt{Var}\left(\widehat{\varphi}''_h(p)\right)}\right]
+\]
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Simulations}
+
+\section{Real data examples}
+
+\section{Concluding remarks}
+
+The aim of this paper has been to .....
+\newpage
+\begin{thebibliography}{}
+\bibitem{ABGK1993}
+\end{thebibliography}
+
+
+\end{document}

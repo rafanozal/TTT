@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1591503266077.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "36|38|42|0|\n66|49|92|0|\n131|66|161|0|\n177|55|204|0|\n230|59|236|0|\n261|73|270|0|\n295|52|301|0|\n317|40|365|0|\n380|45|436|0|\n462|42|518|0|\n544|47|710|0|\n728|36|756|0|\n769|66|802|0|\n819|93|848|0|\n865|98|893|0|\n908|37|962|0|\n",
+    "hash" : "0",
+    "id" : "353346CC",
+    "lastKnownWriteTime" : 1591513374,
+    "last_content_update" : 1591513374699,
+    "path" : "~/Desktop/TTTSizer/TTTSizer/R/tools.R",
+    "project_path" : "R/tools.R",
+    "properties" : {
+        "cursorPosition" : "896,2",
+        "scrollLine" : "857"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,150 @@
+* using log directory ‘/home/gromenawer/Desktop/TTTSizer/TTTSizer.Rcheck’
+* using R version 3.6.3 (2020-02-29)
+* using platform: x86_64-pc-linux-gnu (64-bit)
+* using session charset: UTF-8
+* checking for file ‘TTTSizer/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘TTTSizer’ version ‘1.0’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘TTTSizer’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... NOTE
+Namespaces in Imports field not imported from:
+  ‘dplyr’ ‘ggplot2’ ‘ggpubr’ ‘latex2exp’ ‘lubridate’ ‘reshape2’
+  All declared Imports should be used.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+generateVarianceXVectorBOOTSTRAP: no visible global function definition
+  for ‘cov’
+generateVarianceXVectorBOOTSTRAP: no visible global function definition
+  for ‘var’
+getDataFromFile: no visible global function definition for ‘read.table’
+ttt: no visible global function definition for ‘as_datetime’
+ttt: no visible global function definition for ‘findLittleAvalues’
+ttt: no visible global function definition for ‘pnorm’
+ttt: no visible global function definition for ‘qnorm’
+ttt: no visible global function definition for ‘ggplot’
+ttt: no visible global function definition for ‘aes’
+ttt: no visible binding for global variable ‘Freq’
+ttt: no visible global function definition for ‘geom_density’
+ttt: no visible global function definition for ‘xlim’
+ttt: no visible global function definition for ‘labs’
+ttt: no visible global function definition for ‘theme’
+ttt: no visible global function definition for ‘element_line’
+ttt: no visible global function definition for ‘element_blank’
+ttt: no visible global function definition for ‘ggsave’
+ttt: no visible binding for global variable ‘pis’
+ttt: no visible binding for global variable ‘phi’
+ttt: no visible global function definition for ‘geom_point’
+ttt: no visible global function definition for ‘geom_line’
+ttt: no visible global function definition for ‘geom_abline’
+ttt: no visible global function definition for ‘geom_vline’
+ttt: no visible binding for global variable ‘p0’
+ttt: no visible binding for global variable ‘phiZero’
+ttt: no visible global function definition for ‘TeX’
+ttt: no visible binding for global variable ‘phiOne’
+ttt: no visible binding for global variable ‘phiTwo’
+ttt: no visible global function definition for ‘ggarrange’
+ttt: no visible binding for global variable ‘ColorCodeZero’
+ttt: no visible global function definition for ‘geom_tile’
+ttt: no visible global function definition for ‘scale_fill_manual’
+ttt: no visible binding for global variable ‘distanceZero’
+ttt: no visible global function definition for ‘scale_fill_gradient2’
+ttt: no visible binding for global variable ‘ColorCodeFirst’
+ttt: no visible binding for global variable ‘distanceFirst’
+ttt: no visible binding for global variable ‘ColorCodeSecond’
+ttt: no visible binding for global variable ‘distanceSecond’
+ttt: no visible global function definition for ‘annotate_figure’
+ttt: no visible global function definition for ‘text_grob’
+ttt: no visible binding for global variable ‘ESS’
+ttt: no visible global function definition for ‘write.csv2’
+ttt: no visible global function definition for ‘writeLog’
+ttt: no visible binding for global variable ‘kernelBarCube’
+ttt: no visible binding for global variable ‘kernelBarBarCube’
+Undefined global functions or variables:
+  ColorCodeFirst ColorCodeSecond ColorCodeZero ESS Freq TeX aes
+  annotate_figure as_datetime cov distanceFirst distanceSecond
+  distanceZero element_blank element_line findLittleAvalues geom_abline
+  geom_density geom_line geom_point geom_tile geom_vline ggarrange
+  ggplot ggsave kernelBarBarCube kernelBarCube labs p0 phi phiOne
+  phiTwo phiZero pis pnorm qnorm read.table scale_fill_gradient2
+  scale_fill_manual text_grob theme var write.csv2 writeLog xlim
+Consider adding
+  importFrom("stats", "cov", "pnorm", "qnorm", "var")
+  importFrom("utils", "read.table", "write.csv2")
+to your NAMESPACE file.
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'generateKernelBarHCube'
+  ‘a0Matrix’ ‘a1Matrix’ ‘a2Matrix’ ‘a3Matrix’ ‘a4Matrix’
+Documented arguments not in \usage in documentation object 'generateKernelBarHCube':
+  ‘anMatrix’
+
+Undocumented arguments in documentation object 'generateKernelBarHCubeCubic'
+  ‘a0Matrix’ ‘a1Matrix’ ‘a2Matrix’ ‘a3Matrix’ ‘a4Matrix’ ‘a5Matrix’
+  ‘a6Matrix’
+Documented arguments not in \usage in documentation object 'generateKernelBarHCubeCubic':
+  ‘anMatrix’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... WARNING
+Warning: parse error in file 'lines':
+6: unexpected symbol
+95: 
+96: This should
+         ^
+* checking examples ... ERROR
+Running examples in ‘TTTSizer-Ex.R’ failed
+The error most likely occurred in:
+
+> ### Name: getDataFromFile
+> ### Title: TTTSizer
+> ### Aliases: getDataFromFile
+> 
+> ### ** Examples
+> 
+> getDataFromFile("/home/me/myNumbers.txt")
+Warning in file(file, "rt") :
+  cannot open file '/home/me/myNumbers.txt': No such file or directory
+Error in file(file, "rt") : cannot open the connection
+Calls: getDataFromFile -> read.table -> file
+Execution halted
+* checking PDF version of manual ... WARNING
+LaTeX errors when creating PDF version.
+This typically indicates Rd problems.
+* checking PDF version of manual without hyperrefs or index ... OK
+* DONE
+Status: 1 ERROR, 3 WARNINGs, 2 NOTEs

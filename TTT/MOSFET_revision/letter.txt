@@ -1,0 +1,103 @@
+View Letter
+Date:	18 Dec 2021
+To:	"ML Gamiz" mgamiz@ugr.es
+From:	"Kai Cheng" kai.cheng@brunel.ac.uk
+Subject:	Decision on your Manuscript #JAMT-D-21-03452
+Dear Dr Gamiz:
+
+We have received the reports from our advisors on your manuscript, "Statistical supervised learning with engineering data: A case study of low frequency noise measured on semiconductor devices", which you submitted to The International Journal of Advanced Manufacturing Technology.
+
+Based on the advice received, I feel your manuscript could be accepted for publication should you be prepared to incorporate minor revisions.
+When preparing your revised manuscript, you are asked to carefully consider the reviewer comments which are attached, and submit a list of responses to the comments.
+Your list of responses should be uploaded as a file in addition to your revised manuscript.
+
+Please make sure to submit your editable source files (i. e. Word, TeX)
+
+
+In order to submit your revised manuscript electronically:
+
+
+
+
+%Your username is: ********
+
+If you forgot your password, you can click the 'Send Login Details' link on the EM Login page at https://www.editorialmanager.com/jamt/.
+
+Click "Author Login" to submit your revision.
+
+We look forward to receiving your revised manuscript by 01 Feb 2022.
+Thank you.
+
+Best regards,
+
+
+
+Kai Cheng, PhD
+
+
+Regional Editor
+
+
+The International Journal of Advanced Manufacturing Technology
+
+
+COMMENTS FOR THE AUTHOR:
+
+There is additional documentation related to this decision letter. To access the file(s), please click the link below. 
+You may also login to the system and click the 'View Attachments' link in the Action column.
+
+
+
+
+********
+
+Reviewer #1: This paper studies the relationship between noise and voltage from the perspective of statistical learning, 
+and finally establishes a model that can quantify the influence of threshold voltage on the noise signal. 
+There are few researches in this direction at present, and it has research value. This research is of great help 
+to the machine learning technology in the field of electronic engineering.
+
+
+Reviewer #2: After the revision, it seems to me that the contribution is sufficient. The authors propose a new approach
+ for the analysis of potential correlations between spectral noise current and threshold voltage from common on-wafer MOSFETs.
+ The manuscript entitled " Statistical supervised learning with engineering data: A case study of low frequency noise measured on semiconductor devices " 
+has been investigated in detail. The study seems very valuable. The topic addressed in the manuscript is potentially interesting and 
+the manuscript contains some practical meanings, however, there are some issues which should be addressed by the authors:
+
+
+There are some revisions need for the article to be eligible for possible publication.
+
+1. The paper is in need of substantial editing for grammatical errors especially in:
+a. In page 7 the paragraph " suggested by figure ??" , and the same for the " left and side of the figure …." Number of figure is needed.
+b. In figure 3 the y axis represent what ? the same for the figure 6 ,7,8,9,10,12,13.
+
+2. In section 1, The justification of the proposed method is needed based on model was designed based on statistical supervised learning? 
+And what are some of the advantages and disadvantages of bootstrapping?
+3. The manuscript not contain a flowchart or graphical representation of a process of optimization. This pictorial representation can give 
+step-by-step solution of the given problem, and What is the convergence criteria for program terminated?
+4. How to avoid the transit time noise or partition noise for the proposed approach ?
+5. In section 4; How to set the parameters of proposed model for better performance? The complexity of the proposed model and the model parameter uncertainty are not mentioned.
+6. In section 5, the performances of the proposed method should be better analyzed, commented and visualized in the experimental section.
+7. Conclusion can be more specific listing the efficiency when compared with other methods and the future scope of the work implemented on this paper.
+
+
+Please note that this journal is a Transformative Journal (TJ). Authors may publish their research with us through the traditional subscription access route
+ or make their paper immediately open access through payment of an article-processing charge (APC). Authors will not be required to make a final decision about 
+access to their article until it has been accepted.
+
+Authors may need to take specific actions to achieve compliance with funder and institutional open access mandates. If your research is supported by a funder 
+that requires immediate open access (e.g. according to Plan S principles) then you should select the gold OA route, and we will direct you to the compliant route where possible.
+ For authors selecting the subscription publication route our standard licensing terms will need to be accepted, including our self-archiving policies. 
+Those standard licensing terms will supersede any other terms that the author or any third party may assert apply to any version of the manuscript.
+
+Find out more about compliance
+
+This letter contains confidential information, is for your own use, and should not be forwarded to third parties.
+
+Recipients of this email are registered users within the Editorial Manager database for this journal. We will keep your information on file to use in the process of submitting, 
+evaluating and publishing a manuscript. For more information on how we use your personal details please see our privacy policy at 
+https://www.springernature.com/production-privacy-policy. 
+If you no longer wish to receive messages from this journal or you have questions regarding database management, please contact the Publication Office at the link below.
+
+__________________________________________________
+In compliance with data protection regulations, you may request that we remove your personal registration details at any time. 
+(Use the following URL: https://www.editorialmanager.com/jamt/login.asp?a=r). Please contact the publication office if you have any questions.

@@ -1,0 +1,314 @@
+\documentclass[12pt]{article}
+\usepackage[ansinew]{inputenc}
+\topmargin=-0.05truecm\relax
+ \textheight 23.75cm % 8.6in % 23.5cm
+ \textwidth 16.0cm % 5.8in % 15.0cm
+\renewcommand{\baselinestretch}{1.2}
+\oddsidemargin=0.05truecm\relax%
+\evensidemargin=0.05truecm\relax%
+ \voffset-1.25cm
+ \baselineskip15pt
+ \usepackage[dvips]{color}
+\begin{document}
+
+\begin{center}
+ {\Large\bf }
+\vskip 0.2cm
+
+\subsection* {A machine learning algorithm for reliability analysis (TR-2019-577)}
+\subsubsection*{Revision for {\em IEEE Transactions on Reliability}}
+\vskip 0.2cm
+
+{\bf February 2020}
+\end{center}
+\vskip 0.5cm
+
+\date{\ }
+
+\noindent Dear Editor, \vskip 0.3cm
+
+\noindent Please find attached the revision of our paper, ``A machine learning algorithm for reliability analysis'' by M.L. G\'amiz, F. Navas-G\'omez and R. Raya-Miranda, following your suggestion and the comments from the reviewers.
+\bigskip
+
+We hope you will find suitable our revision. 
+\bigskip
+
+\vskip 0.3cm
+\noindent Yours sincerely,
+
+M.L. G\'amiz
+\vskip 0.5cm
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   RESPUESTAS
+\newpage
+\date{\ }
+{\centerline {\bf \large Reply letter to the Associate Editor}}
+\vskip 1cm
+ 
+
+\begin{quote}
+\emph{ Please revise the paper carefully for a second round review. Try to make the paper more relevant to this journal, 
+as we rejected a number of papers discussing mainly probability/statistics issues. Please modify the writing style as well as theorem/proof style tends to focus on pure analytical issues. Thanks.}
+
+\end{quote}
+
+
+\noindent {\bf Response:} Thank you for reviewing our paper and the valuable feedback from the Reviewers.
+Following your suggestions, we have tried to make the paper more relevant to this journal. To enhance the interest of practitioners in reliability engineering we have included more real examples in this field to emphasize the practical usefulness of the methods. We have worked hard on the introduction to make it clear that both, the topic discussed in this paper (aging) as well as the statistical tool considered (TTT transform) have been recurrent topics in reliability
+analysis (theory and practice) during the last decades.
+
+Aging classes and the TTT curve are still nowadays catching the interest of researchers and practitioners in the area, as can be deduced from the extensive recent bibliography. To highlight this point we have added a considerable number of updated references that are conveniently quoted in the text.
+
+The main purpose of this paper is to bring modern techniques based on nonparametric statistics into the statistical toolbox of reliability analysis, which is not so frequent
+among reliability engineers compared to parametric methods. To do it we introduce a
+new and powerful tool to be used with data before looking for a stochastic (parametric)
+model.
+Following the suggestions of the Associate Editor and Reviewers, we have modified the structure of the manuscript and some mathematical developments have been sketched and moved to an Appendix section added at the end of the manuscript. We have reduced to the
+minimum the mathematical description of the methods.
+We hope this new writing style is considered appropriate for the journal.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\centerline {\bf \large Reply letter to Reviewer \#1}}
+\vskip 1cm
+\noindent Dear Reviewer, \vskip 0.5cm
+\noindent Thank you very much for your comments regarding our paper. We have prepared a revised version of the paper following your comments and suggestions, which are included below using italic font for your easy.
+
+\begin{quote}
+	\emph{{\bf Review report}\\
+		Based on first and second derivatives of Total-Time-on-Test (TTT) transform the authors developed a new method to detecting aging pattern of a lifetime data. By means of Monte Carlo simulation they evaluated the finite	sample properties of the graphical tool TTT-SiZer. Overall the paper worth publishing in Reliability Engineering and System Safety subject to major revision. }
+\end{quote}
+
+\noindent Thank you for your recommendation for publishing  subject to major revision. \\
+\noindent We respond below in detail to your Major and Minor Comments.
+
+\subsection*{Major Comments}
+
+\begin{quote}
+	\emph{(1) In Definition 1.1, The conditional survival function is obtained; conditional on what? one need to specify. Also, Let X a lifetime should
+		be Let X be a lifetime random variable )
+	}
+\end{quote}
+
+\noindent {\bf Response:} Corrected.
+
+\begin{quote}
+	\emph{(2) In Definition 1.1 why the definition of DMRL is given. It can be 	removed as no further discussion on it(except Proposition 2.1). Otherwise they can add the definitions of NBU and IFRA classes. What is the possibility of developing a test against DMRL based on the proposed methods. }
+\end{quote}
+
+\noindent{\bf Response:} We have removed the definition of DMRL class since it is not further considered in the paper. It is our purpose to generalize the work in this paper to have into account other aging behaviors. However, this subject will be developed in a future research.
+
+
+\begin{quote}
+	\emph{ (3) Some notational inconsistency in the algorithm 1 (definition of $X^*$ and $\widehat{\mu}_j^*$). Please correct it.
+		}
+\end{quote}
+\noindent{\bf Response:} Corrected.
+
+\begin{quote}
+	\emph{ (4) In Table 3 why the power decreases as the sample size increases. Authors should give a proper justification.
+	}
+\end{quote}
+
+\noindent {\bf Response:} A paragraph has been added to explain this issue (page 28, lines 558-603). Specifically it is written: 
+\begin{quote}
+Note that for sample sizes $n = 500; 1000$ the maps have been built taking in total $401\times 11$ pixels, whereas for $n = 100$,  $51\times 11$ pixels, and for $n = 50$, $600 21 \times 11$ pixels are considered in the maps, which means that the results are not fully comparable. Table 3 shows the good performance of our test given that the results presented in the table imply a percentage of rejection is reasonable to high for almost all models and sample sizes.
+\end{quote}
+Please note that in the simulations presented, only for sample sizes $n=500$, and $n=1000$ the map is constructed with exactly the same specifications, and in this case, the power of the test increases as the sample size increases, as expected.
+
+\begin{quote}
+	\emph{ (5) The authors discuss two test procedure, test against NBUE and test against IFR. It would be nice to give brief discussion on test against 	other aging classes in the conclusion test. For example Klefsjo developed a test against IFRA class based on scaled TTT transform. The 	new aging classes which mentioned in the conclusion can be defined in Definition 1.2.
+	}
+\end{quote}
+\noindent {\bf Response:} Following your suggestion, we have rewritten the conclusion section including a brief discussion on tests against other classes. Also Definition 1.2 has been rewritten.% *******ESTO NO LO HE HECHO, NO ESTOY DE ACUERDO EN QUE HAYA QUE AÑADIR MAS CLASES!!!
+
+%As we have mentioned previously, it is our aim to generalize the method to evaluate other types of aging.
+%Nevertheless, we would like to emphasize that our graphical test presents an important .....
+
+
+\subsection*{Minor Comments} 
+\begin{quote}
+	\emph{ (1) In abstract based on life data should be based on lifetime data. Similar changes can be made in other places too.
+	}
+\end{quote}
+\noindent {\bf Response:} Corrected.
+
+\begin{quote}
+	\emph{ (2) The last four lines in Page 4 can be rewritten as it was not well	written and lengthy.	}
+\end{quote}
+\noindent {\bf Response:} This paragraph has been removed in the new version of the paper.
+
+\begin{quote}
+	\emph{(3) Page 4, line 93, Based on the sample order statistics we can construct 		the empirical distribution function. This can be changed to Based 	on the sample order statistics empirical distribution function is given
+		by. (it is the representation available.)}
+\end{quote}
+\noindent {\bf Response:} This part of the paper has been removed in the new version of the paper.
+
+\begin{quote}
+	\emph{(4) Page 14 line 216 Montecarlo should be Monte Carlo.}
+\end{quote}
+\noindent {\bf Response:} This paragraph has been moved to the Appendix in the new version of the paper, and this point has been corrected.
+
+\begin{quote}
+	\emph{(5) Page 28, line 490, we simulate samples of size n = 100; 500; and 100,
+		n = 50 is missing.}
+\end{quote}
+\noindent{\bf Response:} Corrected.
+
+\begin{quote}
+	\emph{(6) What are P75 and P95 in the Tables 2 and 3. Please clearly specify
+		it.
+	}
+\end{quote}
+\noindent{\bf Response:} In the current version of the paper, we have replaced Table 2 by a new one, where we have added results of evaluating the finite sample performance of the test based on SiZer-0, which had not been considered in the previous version of the table. The experiment consists of simulating a total of $M=1000$ samples from an Exponential distribution. For each sample  we construct the corresponding SiZer maps: SiZer-0 map for alternative hypothesis ``NBUE but not Exponential'', and SiZer-2 to test against the alternative ``IFR but not Exponential. For each case, we compare with the corresponding true map, and count the total number of pixels where the color in the empirical map is not the same as in the true map (i.e. a completely gray map under the null hypothesis). This count is divided by the total number of pixels in the map and represents the proportion of type I error.
+We run the experiment a total of $M=1000$ times. So, Table 2 gives a summary of these $M=1000$ proportions. Specifically, we present the mean, the median and the quantile of order 0.75. 
+
+
+\begin{quote}
+	\emph{(7) References 18 and 19 are not mentioned in the text.}
+\end{quote}
+\noindent {\bf Response:} Thank you for pointing out this issue. We have now properly quoted these two references.
+\begin{quote}
+	\emph{(8) References should be written uniform fashion. For example some cases volume number is not given.}
+\end{quote}
+\noindent{\bf Response:} We have revised this aspect and the references are now correctly written according to the journal style. 
+\begin{quote}
+	\emph{
+		(9) There are several inconsistencies in the notations, please correct it in the revised version.
+	}
+\end{quote}
+
+\noindent{\bf Response:} Corrected.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\centerline {\bf \large Reply letter to Reviewer $\#$2}}
+\vskip 1cm
+ \noindent Dear Reviewer, \vskip 0.5cm
+
+\noindent Thank you very much for your comments regarding our paper. We have prepared a revised version of the paper following your comments and suggestions, which are included below using italic font for your easy.
+
+\begin{quote}
+\emph{{\bf Review report:} 
+Dear Editor\\
+This is my review on manuscript number RESS-2019-1329 titled ``TTT-SiZer: A graphic tool for aging trends recognition''. This paper has aimed to present a new procedure to explore life data for discovering aging trends in the underlying life distribution. In this regard, a new graphical test is presented by means of scale and space inference about the Total-Time-on-Test transform and its first and second derivatives. Here I left some comments on the manuscript. This is an interesting paper and I suggest its acceptance after revision. To help improve quality of this paper, I provide my comments as below: }
+\end{quote}
+
+\noindent Thank you for your suggestion of acceptance after revision. \\
+\noindent We respond below to your comments.
+
+\begin{quote}
+	\emph{1)	Introduction section is very short. The research mentioned in this section is not well described. The literature is not well treated and there is no enough mentioned up-to-date papers as references. The authors made no effort to organize the information and to provide a structured literature review.}
+\end{quote}
+
+{\bf Response:} Following your suggestion we have completely rewritten the introduction.
+In the new introduction, we have made a great effort to demonstrate that the topic of the article, as well as the mathematical tools considered, have attracted a deal of attention by practitioners in Reliability as can be deduced from the vast literature published in the area in recent years.
+
+We have worked hard in the writing. The structure of the Introduction is as follows. We have first reviewed the contributions to mathematical modeling of different types of aging.  Next, we have revised and quoted some papers on the important reliability concept of Total-Time-on-Test, and finally, we have reviewed a series of contributions on hypothesis testing aimed at assessing the exponentiality hypothesis, in other words, non-aging of an item or system, against different aging alternatives. 
+
+We have paid special attention to papers that deal with tests based on the TTT-plot tool. 
+
+Finally, we have quoted several works in which, among others, the objective is to demonstrate the practical use of these methods by solving specific problems in the field of reliability engineering.
+
+Following your suggestions, we have modified the structure of the manuscript and some mathematical developments have been sketched in the Appendix section added at the end of the manuscript. We have reduced to the minimum the mathematical description of the methods. 
+
+We hope this new writing style is considered appropriate for the journal.
+
+		
+\begin{quote}
+		\emph{2)	In Section 2 the Total-Time-on-Test transform is defined. TTT transform in the other references such as (Rausand and Høyland, 2003 or Zaretalab et al. 2018) is described completely. Therefore, it is not necessary to present these concepts in the present manuscript. It is enough to refer to the sources that provide it. \\
+-  Rausand, M., \& Hoyland, A. (2003). System reliability theory: models, statistical methods, and applications (Vol. 396). John Wiley \& Sons.\\
+- Zaretalab, A., Haghighi, H. S., Mansour, S., \& Sajadieh, M. S. (2018). A mathematical model for the joint optimization of machining conditions and tool replacement policy with stochastic tool life in the milling process. The International Journal of Advanced Manufacturing Technology, 96(5-8), 2319-2339.}
+\end{quote}
+{\bf Response:} Thank you for pointing out this issue. We have now included these two references. In fact, the first one had been omitted in the previous version of the paper by mistake. With respect to the second one, we are grateful to the reviewer because we have studied this paper and have realized that it is well connected to our work, in the sense that the authors also consider a least-squares optimization problem to fit a model to a dataset by means of the TTT-plot. They consider a parametric model while our perspective is non-parametric.
+
+\begin{quote}
+\emph{3)	Particularly authors should highlight what are the main advantages and what is the novelty of the proposed method. Why constructed local-polynomial estimators for the TTT-curve and its first and second derivatives have better performance than other methods?}
+\end{quote}
+{\bf Response:} We explain this point in more detail in the new version of the paper. Specifically in the paragraphs from page 3, line 77, to  page 4, line 98.
+
+\begin{quote}
+\emph{4)	Please have your paper proof read by a native English Speaker or a person more familiar with the English language. The paper should be written in 3rd person not 1st person. If you refer to yourself do not use “I” or “we” use “the authors” but use it only if you want to stress a point or state this is your important opinion.}	
+\end{quote}
+{\bf Response:} We have had our paper revised by a native English Speaker and we have completely changed the language style. Impersonal style is used in the current version.
+
+\begin{quote}
+\emph{5)	Conclusion needs to be extended by comparison with similar studies and discussion about unique results of the study.}
+\end{quote}
+{\bf Response:} Following your suggestion we have written a new Conclusion Section including more details of our study.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\centerline {\bf \large Reply letter to Reviewer \#3}}
+\vskip 1cm
+\noindent Dear Reviewer, \vskip 0.5cm
+
+\noindent Thank you very much for your comments regarding our paper. We have prepared a revised version of the paper following your comments and suggestions, which are included below using italic font for your easy.
+
+ \begin{quote}
+ \emph{{\bf Review report:} The authors introduce a new graphical tool to test aging trends on life data. A graphical test is developed and several examples are presented in order to illustrate its applicability. 	I think the paper is interesting, well written and deserves publication. However, several comments should be taken into account.}
+ 	\end{quote}
+	
+\noindent Thank you for your suggestion of publications. \\
+\noindent We respond below to your comments.
+ 
+ \begin{quote}
+\emph{ 	- A brief introduction to SiZer. How this tool can be used directly by the user? Is it linked to a particular software?}
+ \end{quote}
+\textbf{ Response:} We have added a brief introduction to the SiZer graphic tool at the beginning of Section 4 ``A graphic tool for evaluating aging trends''.	
+
+ On the other hand, we would like to mention that we have developed original programs to implement all methods described in the paper. All the routines for producing the graphs and the calculations of the estimators have been performed using the programming language R and are available from the authors. 
+At the moment we are developing a package under the environment R that will be available to users in brief.
+
+The original idea of SiZer Map is due to J.S. Marron and the first software was created using Matlab. It is available from  his webpage:  http://marron.web.unc.edu/sample-page/marrons-matlab-software/
+ 
+ \begin{quote}
+ \emph{- For reproducibility: explain how you get the data used in the examples.}
+ \end{quote}
+ 
+{\bf 	Response:} The data that we use in the examples have been obtained from previously and well known references. In each case we explicitly refer to the corresponding source.
+ 	
+ \begin{quote}
+ \emph{	- Nair and Sankaran (2013) and Franco-Pereira and Shaked (2014) are recent references related to the topic and that should be included.}
+ \end{quote}	
+{\bf Response:} Following your suggestion we have included these references and have properly quoted in the text.
+ 
+
+
+
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\centerline {\bf \large Reply letter to Reviewer \#4}}
+\vskip 1cm
+\noindent Dear Reviewer, \vskip 0.5cm
+
+\noindent Thank you very much for your comments regarding our paper. We have prepared a revised version of the paper following your comments and suggestions, which are included below using italic font for your easy.
+
+\begin{quote}
+	\emph{ {\bf Review report:} \\
+		The paper aims at presenting a new graphic tool to test aging trends based on life data. Although quite a bit of results are shown, I feel that the paper is not suitable for this journal. The focus and analysis are about the statistical properties, and the results are of much more interest for different journals than reliability engineering. The authors probably could rewrite it with more examples and presenting more engineering insights from the study.  Analytical results could be put in an appendix if they are of great importance. The authors should also carry out a more extensive literature search and discuss more recent and related works. 	In particular, works in reliability engineering journals should be discussed to make the paper more relevant. I see that the references are also rather old, and there is only one references from last 3-4 years.}
+\end{quote}
+
+{\bf Response:} 
+The motivation of this work is to study a classical and crucial issue in reliability analysis such as aging.
+For this, we present a powerful and useful graphical tool that can be beneficial from a practical point of view.
+To demonstrate the strength of our method it is necessary to study its theoretical statistical properties. We understand that the theoretical support of a new methodological proposal is important for the quality standards of the journal. In addition, the extensive study
+of simulation and the applications with real cases that we present demonstrate that our proposal is interesting and has a huge potential for reliability engineering in practice.
+
+Following your suggestion and the Editor's comments, we have changed the structure of the paper in order to make it more readable. Some mathematical explanations, which could be jumped in a first read, have been moved to the Appendix.
+The introduction section has been rewritten in the new version of the paper. An extensive literature review is provided including up-to-date works published (some of them in the last year) in several reliability engineering journals. 
+
+ Finally we provide the necessary computer support for the implementation of the method. In this respect, at the moment we are developing a specialized R package that will be available in brief for the interested practitioners.
+
+
+
+ We believe that our proposal is interesting and worthwhile from a theoretical and practical point of view and we hope that in its current version it is found to fit well the profile and standards of Reliability Engineering and System Safety. 
+
+
+\end{document}

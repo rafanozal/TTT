@@ -1,0 +1,877 @@
+\nonstopmode{}
+\documentclass[letterpaper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\usepackage[utf8]{inputenc} % @SET ENCODING@
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `TTTSizer'}}
+\par\bigskip{\large \today}
+\end{center}
+\begin{description}
+\raggedright{}
+\inputencoding{utf8}
+\item[Type]\AsIs{Package}
+\item[Title]\AsIs{TTT-SiZer: A Graphic Tool For Aging Trends Recognition}
+\item[Version]\AsIs{1.0}
+\item[Author]\AsIs{Rafael Adolfo Nozal Cañadas}
+\item[Maintainer]\AsIs{Rafael Adolfo Nozal Cañadas }\email{rca015@uit.no}\AsIs{}
+\item[Description]\AsIs{A new graphic tool is presented to test aging trends based on lifetime data.
+The graphical test is developed by means of scale and space inference about
+the Total-Time-on-Test transform and its first and second derivatives. The
+graphic tool TTT-SiZer is defined considering nonparametric local polynomial
+kernel estimators and constructing the corresponding (simultaneous as
+well as punctual) confidence intervals around three different curves. The
+finite sample properties of the method are evaluated by a simulation study and
+the comparison with other non-graphical tests shows that the graphical test
+helps localize discrepancies of empirical data concerning a given hypothesized
+aging property, thus allowing to solve the problem locally.}
+\item[License]\AsIs{GPL-3}
+\item[Encoding]\AsIs{UTF-8}
+\item[LazyData]\AsIs{true}
+\item[Imports]\AsIs{ggplot2, reshape2, dplyr, lubridate, latex2exp, ggpubr}
+\item[RoxygenNote]\AsIs{7.1.0}
+\item[NeedsCompilation]\AsIs{no}
+\end{description}
+\Rdcontents{\R{} topics documented:}
+\inputencoding{utf8}
+\HeaderA{findBigA}{TTTSizer}{findBigA}
+%
+\begin{Description}\relax
+Finds a single A\_r(p0). This is use the function that finds all A's. (uppercase)
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+findBigA(p0, h, r, phiVector, kernelCube, poliCube)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{p0}] - An index number refering to the p0 value
+
+\item[\code{h}] - An index number refering to the bandwith
+
+\item[\code{r}] - index with the \textasciicircum{}r value. (Note, R indexing start at 1, 1 = -> \textasciicircum{}0, 2 -> \textasciicircum{}1, and so on )
+
+\item[\code{phiVector}] - The vector with the phi values
+
+\item[\code{kernelCube}] - The cube with all the Kh(pi-p0) values
+
+\item[\code{poliCube}] - The cube with all the (pi-p0)\textasciicircum{}n values
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A single float with the Ar(p0)
+\end{Value}
+%
+\begin{Note}\relax
+The function needs you to calculate first the following constants
+
+\begin{enumerate}
+
+\item{} - a kernel cube with all the K\_h(pi-p0) values
+\item{} - a polinomial cube with all the (pi-p0)\textasciicircum{}n values
+\item{} - a vector with all the phi(xis) values
+
+\end{enumerate}
+
+\end{Note}
+%
+\begin{SeeAlso}\relax
+findBigAvalues
+\end{SeeAlso}
+\inputencoding{utf8}
+\HeaderA{findBigAvalues}{TTTSizer}{findBigAvalues}
+%
+\begin{Description}\relax
+For a given set of data, find the A matrix of dimession i x 1
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+findBigAvalues(p0Index, hIndex, phiVector, kernelCube, poliCube)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{p0Index}] - An index number refering to the p0 value
+
+\item[\code{hIndex}] - An index number refering to the bandwith
+
+\item[\code{phiVector}] - The vector with the phi values
+
+\item[\code{kernelCube}] - The cube with all the Kh(pi-p0) values
+
+\item[\code{poliCube}] - The cube with all the (pi-p0)\textasciicircum{}n values
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+Return a vector with the (A0,A1,A2, A3) values
+\end{Value}
+%
+\begin{Note}\relax
+The function needs you to calculate first the following constants
+
+\begin{enumerate}
+
+\item{} - a kernel cube with all the K\_h(pi-p0) values
+\item{} - a polinomial cube with all the (pi-p0)\textasciicircum{}n values
+\item{} - a vector with all the phi(xis) values
+
+\end{enumerate}
+
+\end{Note}
+%
+\begin{SeeAlso}\relax
+findThetas
+\end{SeeAlso}
+\inputencoding{utf8}
+\HeaderA{findLittleA}{TTTSizer}{findLittleA}
+%
+\begin{Description}\relax
+Finds a single a\_r(p0). This is use the function that finds all a's. (lowercase)
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+findLittleA(p0, h, r, kernelCube, poliCube)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{p0}] - An index number refering to the p0 value
+
+\item[\code{h}] - An index number refering to the bandwith
+
+\item[\code{r}] - index with the \textasciicircum{}r value. (Note, R indexing start at 1, 1 = -> \textasciicircum{}0, 2 -> \textasciicircum{}1, and so on )
+
+\item[\code{kernelCube}] - The cube with all the Kh(pi-p0) values
+
+\item[\code{poliCube}] - The cube with all the (pi-p0)\textasciicircum{}n values
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A single float with the Ar(p0)
+\end{Value}
+%
+\begin{Note}\relax
+The function needs you to calculate first the following constants
+
+\begin{enumerate}
+
+\item{} - a kernel cube with all the K\_h(pi-p0) values
+\item{} - a polinomial cube with all the (pi-p0)\textasciicircum{}n values
+\item{} - a vector with all the phi(xis) values
+
+\end{enumerate}
+
+\end{Note}
+%
+\begin{SeeAlso}\relax
+findThetas
+\end{SeeAlso}
+\inputencoding{utf8}
+\HeaderA{findThetas}{TTTSizer}{findThetas}
+%
+\begin{Description}\relax
+Find thetas for a quadratic method.
+For a given set of data, find the variable matrix solution of theta0, theta1, and theta2
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+findThetas(bigAs, littleAs)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{bigAs}] vector with the big As associated with that p0,x,p,h and kernel
+
+\item[\code{littleAs}] vector with the little As associated with that p0, p,h and kernel
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+c(NaN, NaN, NaN) - If is not a Cramer system
+c(theta0, theta1, theta2)    - Otherwise
+\end{Value}
+\inputencoding{utf8}
+\HeaderA{findThetasCubic}{TTTSizer}{findThetasCubic}
+%
+\begin{Description}\relax
+Find thetas for a cubic method.
+For a given set of data, find the variable matrix solution of theta0, theta1, and theta2
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+findThetasCubic(bigAs, littleAs)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{bigAs}] vector with the big As associated with that p0,x,p,h and kernel
+
+\item[\code{littleAs}] vector with the little As associated with that p0, p,h and kernel
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+c(NaN, NaN, NaN) - If is not a Cramer system
+c(theta0, theta1, theta2)    - Otherwise
+\end{Value}
+\inputencoding{utf8}
+\HeaderA{findVariancePhiWithKernel}{TTTSizer}{findVariancePhiWithKernel}
+%
+\begin{Description}\relax
+Find the variance for a given derivate with a given kernelCube
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+findVariancePhiWithKernel(
+  h,
+  p0,
+  kernelBarCube,
+  sigmaMatrix,
+  weightMatrix,
+  order
+)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{h}] - An index number refering to the bandwith.
+
+\item[\code{p0}] - An index number refering to the p0 value.
+
+\item[\code{kernelBarCube}] - A matrix with all the Kbar\_h(pi-p0) combinations.
+
+\item[\code{sigmaMatrix}] - A Variance/Coovariance matrix.
+
+\item[\code{weightMatrix}] - A weight matrix object.
+
+\item[\code{order}] - The order of the kernel cube you want to generate
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+The variance value that correspond to the given indexes
+\end{Value}
+\inputencoding{utf8}
+\HeaderA{findVariancePhiWithKernelCubic}{TTTSizer}{findVariancePhiWithKernelCubic}
+%
+\begin{Description}\relax
+Find the variance for a given derivate with a given kernelCube (cubic version)
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+findVariancePhiWithKernelCubic(
+  h,
+  p0,
+  kernelBarCube,
+  sigmaMatrix,
+  weightMatrix,
+  order
+)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{h}] - An index number refering to the bandwith.
+
+\item[\code{p0}] - An index number refering to the p0 value.
+
+\item[\code{kernelBarCube}] - A matrix with all the Kbar\_h(pi-p0) combinations.
+
+\item[\code{sigmaMatrix}] - A Variance/Coovariance matrix.
+
+\item[\code{weightMatrix}] - A weight matrix object.
+
+\item[\code{order}] - The order of the kernel cube you want to generate
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+The variance value that correspond to the given indexes
+\end{Value}
+\inputencoding{utf8}
+\HeaderA{generateKernelBarHCube}{TTTSizer}{generateKernelBarHCube}
+%
+\begin{Description}\relax
+For a given kernelCube and polinomialCube, and a's matrix, generate all possible Kbar\_h(pi-p0) combinations.
+This is only for the quadratic version, thus you only need 5 matrices
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+generateKernelBarHCube(
+  kernelCube,
+  poliCube,
+  a0Matrix,
+  a1Matrix,
+  a2Matrix,
+  a3Matrix,
+  a4Matrix,
+  order
+)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{kernelCube}] - The cube with all the Kh(pi-p0) values
+
+\item[\code{poliCube}] - The cube with all the (pi-p0)\textasciicircum{}n values
+
+\item[\code{order}] - The order of the kernel cube you want to generate
+
+\item[\code{anMatrix}] - A matrix with the pi,h values of the a\_n's
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A list of matrixs with all the Kbar\_h(pi-p0) combinations pre-calculated.
+Where the index of the list represent the h value, the row is pi and the column p0
+\end{Value}
+%
+\begin{Note}\relax
+The function needs you to calculate first the following constants
+
+\begin{enumerate}
+
+\item{} - a kernel cube with all the K\_h(pi-p0) values
+\item{} - a polinomial cube with all the (pi-p0)\textasciicircum{}n values
+
+\end{enumerate}
+
+\end{Note}
+\inputencoding{utf8}
+\HeaderA{generateKernelBarHCubeCubic}{TTTSizer}{generateKernelBarHCubeCubic}
+%
+\begin{Description}\relax
+For a given kernelCube and polinomialCube, and a's matrix, generate all possible Kbar\_h(pi-p0) combinations.
+This is for the cubic version, and thus you need the 7 matrices. In the paper, this is notated as K tilde
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+generateKernelBarHCubeCubic(
+  kernelCube,
+  poliCube,
+  a0Matrix,
+  a1Matrix,
+  a2Matrix,
+  a3Matrix,
+  a4Matrix,
+  a5Matrix,
+  a6Matrix,
+  order
+)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{kernelCube}] - The cube with all the Kh(pi-p0) values
+
+\item[\code{poliCube}] - The cube with all the (pi-p0)\textasciicircum{}n values
+
+\item[\code{order}] - The order of the kernel cube you want to generate
+
+\item[\code{anMatrix}] - A matrix with the pi,h values of the a\_n's
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A list of matrixs with all the Kbar\_h(pi-p0) combinations pre-calculated.
+Where the index of the list represent the h value, the row is pi and the column p0
+\end{Value}
+%
+\begin{Note}\relax
+The function needs you to calculate first the following constants
+
+\begin{enumerate}
+
+\item{} - a kernel cube with all the K\_h(pi-p0) values
+\item{} - a polinomial cube with all the (pi-p0)\textasciicircum{}n values
+
+\end{enumerate}
+
+\end{Note}
+\inputencoding{utf8}
+\HeaderA{generateKernelHCube}{TTTSizer}{generateKernelHCube}
+%
+\begin{Description}\relax
+For a given vector of pi's and h's, generate all possible K\_h(pi-p0) combinations.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+generateKernelHCube(piVector, p0Vector, hVector, kernel)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{piVector}] The vector with all the frecuencies (can be a vector of size one)
+
+\item[\code{p0Vector}] The vector with only the p0 values (can be a vector of size one)
+
+\item[\code{hVector}] The vector with only the h's values (can be a vector of size one)
+
+\item[\code{kernel}] The selected kernel function ("gaussian", "biweight", "triweight", "epanechnikov")
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A list of matrixs with all the K\_h(pi-p0) combinations pre-calculated.
+Where the index of the list represent the h value, the row is pi and the column p0
+
+The row is the h, the column is the sum(K\_h(pi-p0))
+\end{Value}
+\inputencoding{utf8}
+\HeaderA{generatePolinomialCube}{TTTSizer}{generatePolinomialCube}
+%
+\begin{Description}\relax
+For a given vector of pi's and generate all possible (pi-p0)\textasciicircum{}n combinations.
+Where n=0,1,2,3,4,5,6
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+generatePolinomialCube(piVector, p0Vector)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{piVector}] The vector with all the frecuencies (can be a vector of size one)
+
+\item[\code{p0Vector}] The vector with only the p0 values (can be a vector of size one)
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A list of matrix with all the(pi-p0)\textasciicircum{}n combinations pre-calculated.
+The index of the list is n, the row of the matrix is pi and the column is p0
+\end{Value}
+\inputencoding{utf8}
+\HeaderA{generateVarianceXVectorBOOTSTRAP}{TTTSizer}{generateVarianceXVectorBOOTSTRAP}
+%
+\begin{Description}\relax
+Generate the Variance/Coovariance matrix with a bootstrap algorithm
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+generateVarianceXVectorBOOTSTRAP(x, bootFactor = 100)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{x}] The original vector with your data points.
+
+\item[\code{bootFactor}] The number of bootstrap iterations, default is 100
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A matrix with all the coovariances and variances. The main diagonal contains the variance vector
+\end{Value}
+\inputencoding{utf8}
+\HeaderA{generateWeightMatrix}{TTTSizer}{generateWeightMatrix}
+%
+\begin{Description}\relax
+Generate a weight matrix object of size n x n with this format
+
+1    0       0      ... 0
+1/n (n-1)/n  0      ... 0
+1/n  1/n    (n-2)/n ... 0
+...
+1/n  1/n     1/n    ... 1/n
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+generateWeightMatrix(n)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{n}] Size of the matrix
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A matrix of floats as specified in the description
+\end{Value}
+\inputencoding{utf8}
+\HeaderA{getDataFromFile}{TTTSizer}{getDataFromFile}
+%
+\begin{Description}\relax
+Read a file with numbers and return them as vector
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+getDataFromFile(filePath)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{filePath}] The file path of the file
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A vector with the numbers
+\end{Value}
+%
+\begin{Examples}
+\begin{ExampleCode}
+getDataFromFile("/home/me/myNumbers.txt")
+
+\end{ExampleCode}
+\end{Examples}
+\inputencoding{utf8}
+\HeaderA{hello}{Hello, World!}{hello}
+%
+\begin{Description}\relax
+Prints 'Hello, world!'.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+hello()
+\end{verbatim}
+\end{Usage}
+%
+\begin{Examples}
+\begin{ExampleCode}
+hello()
+\end{ExampleCode}
+\end{Examples}
+\inputencoding{utf8}
+\HeaderA{kernelFunction}{TTTSizer}{kernelFunction}
+%
+\begin{Description}\relax
+For a given number, return the value of the kernel function, with the specified kernel
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+kernelFunction(x, kernel = "gaussian")
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{x}] (float) A value for the symetric kernel function
+
+\item[\code{kernel}] The selected kernel function
+
+\begin{description}
+
+\item[gaussian] exp(-(x\textasciicircum{}2) / 2) / sqrt(2 * pi)
+\item[biweight] (abs(x)<=1)*15/16*(1-x\textasciicircum{}2)\textasciicircum{}2
+\item[triweight] (abs(x)<=1)*35/32*(1-x\textasciicircum{}2)\textasciicircum{}3
+\item[epanechnikov] (abs(x)<=1)*((1-x\textasciicircum{}2)*3/4)
+
+\end{description}
+
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+(float) The kernel function result.
+\end{Value}
+%
+\begin{Examples}
+\begin{ExampleCode}
+kernelFunction(1.5)
+          kernelFunction(0, kernel="biweight")
+
+\end{ExampleCode}
+\end{Examples}
+\inputencoding{utf8}
+\HeaderA{kernelHFunction}{TTTSizer}{kernelHFunction}
+%
+\begin{Description}\relax
+Correct the kernel of a given data with a given badwith h and k
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+kernelHFunction(x, h, kernel)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{x}] the data to find the kernel, can be a vector
+
+\item[\code{h}] Any given bandwith
+
+\item[\code{kernel}] The selected kernel function ("gaussian", "biweight", "triweight", "epanechnikov")
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+a float vector of size length(x) with the result of the kernel
+\end{Value}
+%
+\begin{Examples}
+\begin{ExampleCode}
+kernelHFunction(1,2,"gaussian")
+
+\end{ExampleCode}
+\end{Examples}
+\inputencoding{utf8}
+\HeaderA{summaryColors}{TTTSizer}{summaryColors}
+%
+\begin{Description}\relax
+After running a TTT function, summarize the results of each SiZer map into a dataframe.
+- The first column of the dataframe is the color name
+- The second column of the dataframe is proportion of pixels for that SiZer map.
+- Notice that rows are group 4 by 4. The first 4 is the SiZer-0, the next 4 SiZer-1, and the last 4 the SiZer-2
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+summaryColors(sizerData)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{sizerData}] The summary returned by the TTT function
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+A 12 x 2 dataframe with the color info summarized.
+\end{Value}
+\inputencoding{utf8}
+\HeaderA{ttt}{For a given array of data, creates several TTT-SiZer plots - Plot with the raw data using density a density plot. - Plot with the phi vector. - The Theta / Phi\_h vector / Family plots for Theta0, Theta1, Theta2 - All theta plot together in the same image - The SiZer 0, SiZer 1, and SiZer 2 plots - All SiZer plot together in the same image with the family plot Theta0 - The SiZer 0, SiZer 1, and SiZer 2 plots with the z quantiles instead of strict categorical pixels - The ESS (Effective Sample Space)}{ttt}
+%
+\begin{Description}\relax
+For a given array of data, creates several TTT-SiZer plots
+- Plot with the raw data using density a density plot.
+- Plot with the phi vector.
+- The Theta / Phi\_h vector / Family plots for Theta0, Theta1, Theta2
+- All theta plot together in the same image
+- The SiZer 0, SiZer 1, and SiZer 2 plots
+- All SiZer plot together in the same image with the family plot Theta0
+- The SiZer 0, SiZer 1, and SiZer 2 plots with the z quantiles instead of strict categorical pixels
+- The ESS (Effective Sample Space)
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+ttt(
+  myData,
+  xgrid = 401,
+  ygrid = 11,
+  hMin = 0,
+  hMax = 1,
+  kernel = "gaussian",
+  myMethod = "quadratic",
+  quantileMethod = "normal",
+  alpha = 0.05,
+  ESSLimit = 5,
+  bootstrapSample = 500,
+  savePlots = TRUE,
+  saveCSV = TRUE,
+  saveLog = FALSE,
+  blackAndWhite = FALSE
+)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{myData}] array with the data. Doesn't need to be sorted.
+
+\item[\code{xgrid}] number of estimation points.
+
+Default is 401. Beware that this could take some
+time to calculate.
+
+\item[\code{ygrid}] how many h we are we going to generate.
+
+Default is 11.
+
+\item[\code{hMin}] the minimum h you want to try.
+
+Default is 1/(ygrid-1).
+
+If you set a minimum bigger than the maximum, or smaller than
+0, the default will be used instead
+
+\item[\code{hMax}] the maximum h you want to try.
+
+Default is 1.
+
+If you set a maximum smaller than the minimum, or bigger than
+1, the default will be used instead
+
+\item[\code{kernel}] which kernel do you want:
+
+"epanechnikov"
+"biweight"
+"triweight"
+
+\item[\code{myMethod}] which type of interpolation do you use:
+
+"quadratic" (DEFAULT)
+"cubic"
+
+\item[\code{quantileMethod}] You can choose which quantile method to use when
+calculating the confident intervals.
+
+"normal" (DEFAULT)
+
+- Classic Z-score based on a normal distribution.
+For this method you can specify the alpha
+parameter. For example, for alpha 0.05, you will
+get a Z of 1.96
+
+"simultaneous"
+
+- It uses a Z-score different for each pixel,
+depending on the h value for that pixel.
+
+\item[\code{alpha}] Level of significance for the confident intervals.
+
+Default is 0.05
+
+See the quantileMethod for more info
+
+\item[\code{ESSLimit}] Effective Sample Space. (Default = 5)
+
+How many numbers do you need to have around to be a valid result.
+
+\item[\code{bootstrapSample}] If you choose to use the variance with the bootstrap
+method, you can specify the number of sample use for
+the bootstrap
+
+Default is 100
+
+\item[\code{savePlots}] Generate all the plots and save them into the result folder (Default = TRUE)
+
+\item[\code{saveCSV}] Save all numbers used to generate all the plots into a CSV file (Default = TRUE)
+
+\item[\code{saveLog}] Save every single calculation into a TXT file. File grow exponential, and is around 20MB for 400 x 10 run. (Default = FALSE)
+Use this only for debuggin.
+
+\item[\code{blackAndWhite}] Save your plots with a black and white theme (Default = FALSE)
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Value}
+The function itself, return the raw data of all the calculations in a dataframe with this columns:
+
+This two numbers correspond which each pixel in the SiZer plots. So each row of the dataframe represent the information in each pixels:
+
+p0 - A value between 0 and 1
+h  - The softener used for the kernel
+
+The values for the function, first derivative, and second derivative.
+
+phiZero
+phiOne
+phiTwo
+
+The variance for that given derivatives
+
+zeroVariance
+firstVariance
+secondVariance
+
+The Effective Sample Space value for that pixel.
+
+ESS - A value between 0 and infinity.
+
+These are the limits on the left and the right, for the confident interval in each derivative.
+
+LeftIntervalZero
+LeftIntervalFirst
+LeftIntervalSecond
+RightIntervalZero
+RightIntervalFirst
+RightIntervalSecond
+
+This are all boolean values and tell you whether the average is
+inside the confident interval, under the lowest limit, or above
+the upper limit. For each of the derivatives.
+
+ZeroInZero
+ZeroInFirst        (average inside)
+ZeroInSecond
+
+ZeroSmallerZero
+ZeroSmallerFirst   (average under)
+ZeroSmallerSecond
+
+ZeroBiggerZero
+ZeroBiggerFirst    (average above)
+ZeroBiggerSecond
+
+Which color correspond in the SiZer map
+
+ColorCodeZero
+ColorCodeFirst
+ColorCodeSecond
+
+In the continuos SiZer maps, this tells you how many sigmas away is
+the derivative which respect the average
+
+distanceZero
+distanceFirst
+distanceSecond
+
+The phi vector value that is assigned to that p0 value. This column
+is redundant and it repeat itself each time the same p0 appear in a
+row.
+
+PhiVector
+
+Also; several plots will appear into the result folder, if the
+savePlot option was set to TRUE The result folder is named as the
+timestamp of the moment you run the script.
+\end{Value}
+%
+\begin{Examples}
+\begin{ExampleCode}
+
+This should take about 40 seconds if you run it with a CPU made from a toaster:
+
+xgrid = 50
+ygrid = 11
+myData  = getRandomData(50,"gamma", 1/5, 5)
+
+ttt(myData, xgrid, ygrid, kernel = "gaussian", myMethod = "quadratic", variance = "bootstrap",  ESSLimit = 5, saveCSV = TRUE, saveLog = FALSE)
+
+\end{ExampleCode}
+\end{Examples}
+\printindex{}
+\end{document}

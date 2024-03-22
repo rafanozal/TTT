@@ -1,0 +1,106 @@
+Creación de carpeta:
+
+	No tengo ni idea. He probado varias veces y aquí funciona bien, y es el
+    mismo código que llevo usando meses, y que probábamos allí en directo. Para
+    este y para todos los proyectos que tengo.
+
+	El RStudio que utilizo yo es el 1.1.456 con versión de R 3.5.1 (2018-07-02)
+
+
+Colores para el Zero: (Hecho)
+
+	Amarillo cuando sea menor que 1
+
+	Camel cuando 1 esté incluido en el intervalo
+
+	Verde aceituna cuando sea mayor que 1
+
+myData, será directamente la muestra que se va a analizar (Hecho)
+
+n: es el tamaño de la muestra, por tanto, puedes no pasarlo como argumento y
+obtenerlo de myData. (Hecho)
+
+	N me hace falta fuera para generar una muestra de tamaño N, pero no pasa
+    como argumento. Dentro de la función ya averigua N por su cuenta.
+
+ngrid: debe ser el tamaño de la red de p’s donde se van a evaluar las derivadas.
+En general, debe ser menor que n. Este parámetro sí debe ser un argumento que se
+pueda modificar, y que por defecto suele tener el valor 401. Con esto debes
+crear un vector de longitud ngrid que vaya de (0,1) (Hecho)
+
+	He puesto por defecto para el test grande, N = 1000 y XGRID = 401
+
+	Con esto tarda una hora más o menos con bootstrap = 100. Lo que más tarda
+    son los kernels 
+
+nh: es lo que tú llamas ygrid, será el número de anchos de banda que se van a
+utilizar, por defecto, 11 (Casi Hecho)
+
+	En el test completo está puesto por defecto a 11.
+
+	Lo pongo como defecto 11 en la función.
+
+	Lo dejo como ygrid por ahora para no volverme loco con el código, al final
+	cambiamos todos los nombres de variables que hagan falta por el estándar que
+	sea
+
+
+
+hmin: valor de h mínimo
+hmax: valor de h máximo (Hecho)
+
+	Si la lías parda con los extremos te pone por defecto la opción de
+    min = 1/(h-1)
+    max = 1
+
+Para los valores entre los que va h, se puede utilizar la regla que te dí:
+hmax = rango (que en este caso es siempre 1) y hmin = rango/(ngrid -1) 
+(NO HECHO)
+
+	Esto debería ser una secuencia. Para hMin y hMax lo que valga, y para lo que
+    va entre medias, dejo lo de 10^seq(log10(minimumH),log10(maximumH),length = 
+    ygrid)
+
+
+kernel, ponle por defecto núcleo gaussiano, es más utilizado para SiZer (Hecho)
+
+B: será el número de muestras boostrap que se hacen para el cálculo de la
+varianza, es mejor, que lo pongas como argumento para poder modificarlo desde
+la función, por defecto puedes poner 100 o 500. (Hecho)
+
+	Lo llamo bootstrapSample , defecto a 100
+
+
+alpha: el nivel de significación al que se van a hacer los intervalos de
+confianza, por defecto, 0.05
+
+
+
+quantile: en principio, lo puedes poner para que pueda tomar los valores 1 y 2,
+de forma que 
+Si quantile=1, indica que se va a utilizar el cuantil de la normal (1.96 para
+alpha=0.05)
+Si quantile=2, indica que se va a utilizar un cuantil simultáneo. Voy a incluir
+la fórmula en el documento, para cada h se calcula un valor distinto (Casi Hecho)
+
+	No se explicar con rigor lo que es el quantile = 2, he puesto una
+    aproximación en la documentación de la función pero tienes que repasarlo y
+    escribirlo bien
+
+	El símbolo ese de conjunto vacío no se como operarlo en esa fórmula
+
+	No se tampoco como calcular el delta. Tengo una varianza para cada pixel,
+    que corresponde con un p0 y un h. Y con esa varianza puedo hacer un
+    intervalo más grande o más pequeño. Pero no se que tienen que ver dos puntos
+    p0 aquí. Sólo tengo uno para cada pixel. En todo caso puedo hacerlo con el
+    punto de delante, o el punto de detrás, y que la distancia entre esos sea
+    más grande o más pequeña.
+
+	Y me falta si ese log es log10 o ln
+
+
+
+Cuando haces la estimación empírica de la curva phi, debes forzar a que empiece
+en 0 y termine en 1 (¿Hecho?)
+
+	¿No es lo que hago en las líneas 318 y 319?

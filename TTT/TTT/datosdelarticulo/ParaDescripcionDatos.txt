@@ -1,0 +1,21 @@
+Example 1: accidents
+Data: Interoccurrence times of fatal accidents to British-registered passenger aircraft, 1946-1963, measured in number of days and listed in the order of their occurrence in time. 
+Source: Cuparic, M., Milosevic, B., and Obradovic, M. New L2-type exponentiality tests. SORT, 43 (1), ( 2019), pp. 1–26.
+
+Example 2: electrical_system
+Data: Failure and running times (1000 cycles) of a sample of 30 units of a larger electrical system. 
+Source: Cuparic, M., Milosevic, B., and Obradovic, M. New L2-type exponentiality tests. SORT, 43 (1), ( 2019), pp. 1–26.
+
+Example 3: aarset
+Data: Failure times of electrical devices, available
+Source: Aarset, M.V. How to identify a bathtub hazard rate. IEEE Transactions on Reliability, 36 (1) (1987), pp. 106–108.
+
+
+Example 4: brakes
+Data: Failure times for right rear brakes on D9G-66A Caterpillar tractors
+Source: Cuparic, M., Milosevic, B., and Obradovic, M. New L2-type exponentiality tests. SORT, 43 (1), ( 2019), pp. 1–26.
+
+
+Example 5: granulocytic
+Data: Survival times, in days from diagnosis, of 43 patients suffering from chronic granulocytic leukemia.
+Source: Lai, C.D., and Xie, M. Stochastic aging and Dependence for Reliability. (2006), Springer.

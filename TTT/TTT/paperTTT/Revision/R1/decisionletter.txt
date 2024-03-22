@@ -1,0 +1,120 @@
+Ref: RESS_2019_1329
+Title: TTT-SiZer: A graphic tool for aging trends recognition
+Journal: Reliability Engineering and System Safety
+
+Dear Dr. Gamiz,
+
+Thank you for submitting your manuscript to Reliability Engineering and System Safety.
+
+I have completed my evaluation of your manuscript. The reviewers recommend reconsideration of your manuscript following revision. 
+I invite you to resubmit your manuscript after addressing the comments below.
+
+When revising your manuscript, please consider all issues mentioned in the reviewers' comments carefully: 
+please outline in a cover letter every change made in response to their comments and provide suitable rebuttals for any comments not addressed. 
+Please note that your revised submission may need to be re-reviewed.
+
+If you would like to revise your manuscript, you first need to accept this invitation:
+
+Log into EVISE® at: http://www.evise.com/evise/faces/pages/navigation/NavController.jspx?JRNL_ACR=RESS;
+Locate your manuscript under the header 'My Submissions that need Revisions' on your 'My Author Tasks' view; and
+Click on 'Agree to Revise'.
+Upon agreeing to revise your manuscript, your revision deadline will be displayed in your 'My Author Tasks' view.
+
+When you are ready, please submit your revision by logging into EVISE® at: http://www.evise.com/evise/faces/pages/navigation/NavController.jspx?JRNL_ACR=RESS
+
+Reliability Engineering and System Safety values your contribution and I look forward to receiving your revised manuscript.
+
+Please remember to sign in to receive the list of contents of next issues of RESS in:
+https://www.sciencedirect.com/science/serial-alerts/save/09518320
+
+Kind regards
+
+Prof. Carlos Guedes Soares
+Editor-in-Chief
+Reliability Engineering and System Safety
+Editor and Reviewer Comments:
+-Editor
+
+  - Please revise the paper carefully for a second round review. Try to make the paper more relevant to this journal, 
+as we rejected a number of papers discussing mainly probability/statistics issues. Please modify the writing style as well as theorem/proof
+ style tends to focus on pure analytical issues. Thanks.
+
+-Reviewer 1
+
+  -
+
+Please find the attached pdf file
+
+
+-Reviewer 2
+
+  -
+This is my review on manuscript number RESS_2019_1329 titled “TTT-SiZer: A graphic tool for aging trends recognition”. 
+This paper has aimed to present a new procedure to explore life data for discovering aging trends in the underlying life distribution.
+ In this regard, a new graphical test is presented by means of scale and space inference about the Total-Time-on-Test transform and its 
+first and second derivatives. Here I left some comments on the manuscript. This is an interesting paper and I suggest its acceptance 
+after revision. To help improve quality of this paper, I provide my comments as below:
+
+1)    Introduction section is very short. The research mentioned in this section is not well described. 
+The literature is not well treated and there is no enough mentioned up-to-date papers as references.
+ The authors made no effort to organize the information and to provide a structured literature review.
+
+2)    In Section 2 the Total-Time-on-Test transform is defined. TTT transform in the other references such 
+as (Rausand and Høyland, 2003 or Zaretalab et al. 2018) is described completely. 
+Therefore, it is not necessary to present these concepts in the present manuscript. It is enough to refer to the sources that provide it.
+
+ 
+
+Rausand, M., & Høyland, A. (2003). System reliability theory: models, statistical methods, and applications (Vol. 396). John Wiley & Sons.
+
+Zaretalab, A., Haghighi, H. S., Mansour, S., & Sajadieh, M. S. (2018).
+ A mathematical model for the joint optimization of machining conditions and tool replacement policy with stochastic tool life in the milling 
+process. The International Journal of Advanced Manufacturing Technology, 96(5-8), 2319-2339.
+
+ 
+
+3)    Particularly authors should highlight what are the main advantages and what is the novelty of the proposed method.
+Why constructed local-polynomial estimators for the TTT-curve and its first and second derivatives have better performance than other methods?
+
+4)    Please have your paper proof read by a native English Speaker or a person more familiar with the English language. 
+The paper should be written in 3rd person not 1st person. If you refer to yourself do not use “I” or “we” use “the authors” but use 
+it only if you want to stress a point or state this is your important opinion.
+
+5)         Conclusion needs to be extended by comparison with similar studies and discussion about unique results of the study.
+
+ 
+
+
+
+
+-Reviewer 3
+
+  - The authors introduce a new graphical tool to test aging trends on life data. A graphical test is developed and several examples are presented in order to illustrate its applicability.
+I think the paper is interesting, well written and deserves publication. However, several comments should be taken into account:
+- A brief introduction to SiZer. How this tool can be used directly by the user? Is it linked to a particular software?
+- For reproducibility: explain how you get the data used in the examples.
+- Nair and Sankaran (2013) and Franco-Pereira and Shaked (2014) are recent references related to the topic and that should be included.
+
+
+
+-Reviewer 4
+
+  -
+The paper aims at presenting a new graphic tool to test aging trends based on life data. 
+Although quite a bit of results are shown, I feel that the paper is not suitable for this journal. 
+The focus and analysis are about the statistical properties, and the results are of much more interest for different journals than reliability engineering.
+
+The authors probably could rewrite it with more examples and presenting more engineering insights from the study. 
+Analytical results could be put in an appendix if they are of great importance.
+
+The authors should also carry out a more extensive literature search and discuss more recent and related works. 
+In particular, works in reliability engineering journals should be discussed to make the paper more relevant. I see that the references are also rather old, and there is only one references from last 3-4 years.
+
+Have questions or need assistance?
+For further assistance, please visit our Customer Support site. Here you can search for solutions on a range of topics, find answers to frequently asked questions, and learn more about EVISE® via interactive tutorials. You can also talk 24/5 to our customer support team by phone and 24/7 by live chat and email.
+
+-------------------------------------------------------------
+
+Copyright © 2018 Elsevier B.V. | Privacy Policy
+
+Elsevier B.V., Radarweg 29, 1043 NX Amsterdam, The Netherlands, Reg. No. 33156677.

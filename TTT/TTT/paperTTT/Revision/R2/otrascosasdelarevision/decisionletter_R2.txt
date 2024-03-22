@@ -1,0 +1,77 @@
+﻿Decision on your submission to Reliability Engineering and System Safety	
+23/Mar/2020 18:30
+From:
+	
+Carlos Guedes		Soares
+To:
+	
+M.L. Gamiz
+CC:
+	
+minxie@cityu.edu.hk
+﻿
+Ref: RESS_2019_1329_R1
+Title: TTT-SiZer: A graphic tool for aging trends recognition
+Journal: Reliability Engineering and System Safety
+
+Dear Dr. Gamiz,
+
+Thank you for submitting your manuscript to Reliability Engineering and System Safety.
+
+I have completed my evaluation of your manuscript. The reviewers recommend reconsideration of your manuscript following revision. I invite you to resubmit your manuscript after addressing the comments below.
+
+When revising your manuscript, please consider all issues mentioned in the reviewers' comments carefully: please outline in a cover letter every change made in response to their comments and provide suitable rebuttals for any comments not addressed. Please note that your revised submission may need to be re-reviewed.
+
+If you would like to revise your manuscript, you first need to accept this invitation:
+
+Log into EVISE® at: http://www.evise.com/evise/faces/pages/navigation/NavController.jspx?JRNL_ACR=RESS;
+Locate your manuscript under the header 'My Submissions that need Revisions' on your 'My Author Tasks' view; and
+Click on 'Agree to Revise'.
+Upon agreeing to revise your manuscript, your revision deadline will be displayed in your 'My Author Tasks' view.
+
+When you are ready, please submit your revision by logging into EVISE® at: http://www.evise.com/evise/faces/pages/navigation/NavController.jspx?JRNL_ACR=RESS
+
+Reliability Engineering and System Safety values your contribution and I look forward to receiving your revised manuscript.
+
+Please remember to sign in to receive the list of contents of next issues of RESS in:
+https://www.sciencedirect.com/science/serial-alerts/save/09518320
+
+Kind regards
+
+Prof. Carlos Guedes Soares
+Editor-in-Chief
+Reliability Engineering and System Safety
+Editor and Reviewer Comments:
+-Editor
+
+  - Please revise the paper by addressing the issues a bit more. Thanks.
+
+-Reviewer 1
+
+  - The revision is done without much care. The author addressed the most of the suggestions. Still there is minor correction needed. For example, the newly added reference Zaretala et al. (2018) not discussed in the text. There are several typos still exist.  for example, put a comma after equation (1). Please correct all these mistakes.
+
+-Reviewer 3
+
+  - I am satisfied that the authors have addressed all my comments now, and I consider the paper ready for publication. I am looking forward to using the R package they are preparing.
+
+
+-Reviewer 4
+
+  -
+The paper has been improved based on earlier comments. But I feel that more should be done to address my concerns.
+
+One is the relevance to reliability engineering. The focus is still on analytical results without much discussion on the implication in reliability.
+
+The preliminaries is too long and it should focus more on recent works and related contributions. In fact, the paper could be shortened a bit (including the references as many old ones make the paper/topic looks old, especially those in 60-90s).
+
+I do not think all examples are needed. They are simple exercises without a sufficient amount of insights. Data set by Aarset is really old, and leukemia example is not engineering example to me.
+
+
+Have questions or need assistance?
+For further assistance, please visit our Customer Support site. Here you can search for solutions on a range of topics, find answers to frequently asked questions, and learn more about EVISE® via interactive tutorials. You can also talk 24/5 to our customer support team by phone and 24/7 by live chat and email.
+
+-------------------------------------------------------------
+
+Copyright © 2018 Elsevier B.V. | Privacy Policy
+
+Elsevier B.V., Radarweg 29, 1043 NX Amsterdam, The Netherlands, Reg. No. 33156677.
